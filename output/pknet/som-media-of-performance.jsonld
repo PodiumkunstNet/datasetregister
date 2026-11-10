@@ -1,0 +1,160 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://data.podiumkunst.net/dataset/som-media-of-performance",
+  "identifier": "https://data.podiumkunst.net/dataset/som-media-of-performance",
+  "name": [
+    {
+      "@language": "en",
+      "@value": "Medium of performance"
+    },
+    {
+      "@language": "nl",
+      "@value": "Uitvoeringsmedia"
+    }
+  ],
+  "description": [
+    {
+      "@language": "en",
+      "@value": "Linked Open Data hierarchically structured, multilingual terminology resource for the unambiguous identification of mediums of performance prescribed and/or used in the performing arts. This includes voices, instruments and compositions of instrumental and vocal ensembles. This source provides a solid basis for searching for repertoire based on the instrumentation (both vocal and instrumental) of a piece of music."
+    },
+    {
+      "@language": "nl",
+      "@value": "Linked Open Data hiërarchisch gestructureerde, meertalige terminologiebron voor de eenduidige identificatie van middelen die worden voorgeschreven en/of gebruikt bij uitvoeringen in de podiumkunsten. Denk hierbij aan (zang)stemmen, instrumenten en instrumentale en vocale ensemblesamenstellingen. Deze bron biedt een degelijke basis voor het zoeken van repertoire op basis van de bezetting van een muziekstuk."
+    }
+  ],
+  "dateCreated": {
+    "@value": "2022-01-01",
+    "@type": "Date"
+  },
+  "dateModified": {
+    "@value": "2026-03-12",
+    "@type": "Date"
+  },
+  "datePublished": {
+    "@value": "2022-12-31",
+    "@type": "Date"
+  },
+  "inLanguage": [
+    "nl-NL",
+    "en-US"
+  ],
+  "version": "1.0",
+  "includedInDataCatalog": {
+    "@id": "https://data.podiumkunst.net/datacatalog/pknet"
+  },
+  "keywords": [
+    {
+      "@language": "nl",
+      "@value": "uitvoeringsmedia"
+    },
+    {
+      "@language": "nl",
+      "@value": "muziekwerken"
+    },
+    {
+      "@language": "nl",
+      "@value": "componisten"
+    },
+    {
+      "@language": "nl",
+      "@value": "ensemblesamenstellingen"
+    },
+    {
+      "@language": "nl",
+      "@value": "instrumenten"
+    },
+    {
+      "@language": "nl",
+      "@value": "zangstemmen"
+    },
+    {
+      "@language": "en",
+      "@value": "media of performance"
+    },
+    {
+      "@language": "en",
+      "@value": "voices"
+    },
+    {
+      "@language": "en",
+      "@value": "instruments"
+    }
+  ],
+  "about": {
+    "@id": "http://www.wikidata.org/entity/Q617028"
+  },
+  "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "spatialCoverage": {
+    "@id": "https://www.geonames.org/2750405"
+  },
+  "temporalCoverage": "1900/..",
+  "creator": {
+    "@id": "https://podiumkunst.net"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://podiumkunst.net",
+    "name": [
+      {
+        "@language": "nl",
+        "@value": "Podiumkunst.net"
+      },
+      {
+        "@language": "en",
+        "@value": "Podiumkunst.net"
+      }
+    ],
+    "identifier": "NL-podiumkunstnet",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "name": {
+        "@language": "nl",
+        "@value": "Petra Dreiskämper"
+      },
+      "email": "data@podiumkunst.net"
+    }
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": {
+        "@language": "nl",
+        "@value": "SPARQL-endpoint"
+      },
+      "description": {
+        "@language": "nl",
+        "@value": "SPARQL endpoint"
+      },
+      "contentUrl": {
+        "@id": "https://data.muziekschatten.nl/sparql"
+      },
+      "dateCreated": {
+        "@value": "2022-01-01",
+        "@type": "Date"
+      },
+      "dateModified": {
+        "@value": "2026-03-12",
+        "@type": "Date"
+      },
+      "datePublished": {
+        "@value": "2022-12-31",
+        "@type": "Date"
+      },
+      "inLanguage": [
+        "nl-NL",
+        "en-US"
+      ],
+      "usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    }
+  ]
+}

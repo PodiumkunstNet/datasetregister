@@ -1,0 +1,1685 @@
+<https://def.nde.nl/dataset#DatacatalogShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#targetSubjectsOf> <https://schema.org/dataset>;
+    <http://www.w3.org/ns/shacl#class> <https://schema.org/DataCatalog>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Datacatalogus"@nl, "Data catalog"@en;
+    <http://www.w3.org/ns/shacl#description> "Een datacatalogus bestaat uit een set van datasetbeschrijvingen"@nl, "A data catalog consists of a set of dataset descriptions"@en;
+    <https://def.nde.nl#futureChange> _:df_18_0;
+    <http://www.w3.org/ns/shacl#property> _:df_18_1, <https://def.nde.nl/dataset#SchemaNameUniqueLangProperty>, <https://def.nde.nl/dataset#SchemaNameLangStringProperty>, <https://def.nde.nl/dataset#SchemaDescriptionPropertyShouldExist>, _:df_18_6, <https://def.nde.nl/dataset#SchemaDescriptionUniqueLangProperty>, <https://def.nde.nl/dataset#SchemaDescriptionLangStringProperty>, _:df_18_11, _:df_18_17, _:df_18_19, _:df_18_20.
+_:df_18_0 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>.
+_:df_18_1 <http://www.w3.org/ns/shacl#description> "Naam van de datacatalogus"@nl, "Name of the data catalog"@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_2;
+    <http://www.w3.org/ns/shacl#message> "Voeg een titel toe"@nl, "Add a title"@en.
+_:df_18_2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_3;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_4.
+_:df_18_3 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_5;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_5 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+<https://def.nde.nl/dataset#SchemaNameUniqueLangProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+<https://def.nde.nl/dataset#SchemaNameLangStringProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_221;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+<https://def.nde.nl/dataset#SchemaDescriptionPropertyShouldExist> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_226;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een beschrijving toe"@nl, "Add a description"@en.
+_:df_18_6 <http://www.w3.org/ns/shacl#description> "Een beschrijving van de inhoud van de datacatalogus.\n                Deze is bij voorkeur minimaal drie zinnen en maximaal één alinea lang (2000 karakters).\n                De vindbaarheid van de datacatalogus wordt onder andere bepaald door de kwaliteit van de beschrijving.\n                Denk hierbij aan verschillende gebruikers, vakgenoten maar ook anderen,\n                waarvoor de tekst begrijpelijk moet zijn."@nl, "A description of the contents of the data catalog.\n                Preferably at least three sentences and at most one paragraph (2,000 characters).\n                The discoverability of the data catalog depends in part on the quality of the description.\n                Consider different audiences – both domain experts and others –\n                for whom the text should be understandable."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_7.
+_:df_18_7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_8;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_9.
+_:df_18_8 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_10;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_10 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+<https://def.nde.nl/dataset#SchemaDescriptionUniqueLangProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+<https://def.nde.nl/dataset#SchemaDescriptionLangStringProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_222;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_11 <http://www.w3.org/ns/shacl#description> "Uitgever van de datacatalogus"@nl, "Publisher of the data catalog"@en;
+    <https://def.nde.nl#futureChange> _:df_18_12;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/publisher>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_13;
+    <http://www.w3.org/ns/shacl#message> "Voeg een uitgever toe"@nl, "Add a publisher"@en.
+_:df_18_12 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_14;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_15.
+_:df_18_14 <http://www.w3.org/ns/shacl#class> <https://schema.org/Organization>.
+_:df_18_15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_16;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_16 <http://www.w3.org/ns/shacl#class> <https://schema.org/Person>.
+_:df_18_17 <https://def.nde.nl#futureChange> _:df_18_18;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/publisher>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één uitgever"@nl, "Use at most one publisher"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_18 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_19 <http://www.w3.org/ns/shacl#description> "Dataset(s) in de datacatalogus"@nl, "Dataset(s) in the data catalog"@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dataset>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Voeg minimaal één datasetbeschrijving toe aan de datacatalogus. Een datacatalogus bestaat namelijk uit datasetbeschrijvingen"@nl, "Add at least one dataset description to the data catalog. A data catalog consists of dataset descriptions"@en.
+_:df_18_20 <http://www.w3.org/ns/shacl#class> <https://schema.org/Dataset>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dataset>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een dataset van type schema:Dataset"@nl, "Use a dataset of type schema:Dataset"@en.
+<https://def.nde.nl/dataset#DatacatalogIriShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#targetSubjectsOf> <https://schema.org/dataset>;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_21;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Geef de datacatalogus een URI"@nl, "Give the data catalog a URI"@en.
+_:df_18_21 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DatasetShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#description> "Een datasetbeschrijving bestaat uit elementen die de dataset beschrijven"@nl, "A dataset description consists of elements that describe the dataset"@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#SchemaNameUniqueLangProperty>, <https://def.nde.nl/dataset#SchemaNameLangStringProperty>, <https://def.nde.nl/dataset#SchemaDescriptionPropertyShouldExist>, <https://def.nde.nl/dataset#SchemaDescriptionUniqueLangProperty>, <https://def.nde.nl/dataset#SchemaDescriptionLangStringProperty>, _:df_18_22, <https://def.nde.nl/dataset#SchemaDescriptionProperty>, _:df_18_27, _:df_18_32, _:df_18_33, <https://def.nde.nl/dataset#SchemaLicenseIriProperty>, _:df_18_34, _:df_18_35, _:df_18_53, _:df_18_54, _:df_18_55, _:df_18_56, _:df_18_57, _:df_18_63, <https://def.nde.nl/dataset#SchemaDatePublishedDatatypeProperty>, <https://def.nde.nl/dataset#SchemaDatePublishedIso8601Property>, _:df_18_64, <https://def.nde.nl/dataset#SchemaDateCreatedDatatypeProperty>, <https://def.nde.nl/dataset#SchemaDateCreatedIso8601Property>, _:df_18_65, <https://def.nde.nl/dataset#SchemaDateModifiedDatatypeProperty>, <https://def.nde.nl/dataset#SchemaDateModifiedIso8601Property>, _:df_18_66, _:df_18_67, _:df_18_69, _:df_18_70, _:df_18_71, _:df_18_72, _:df_18_73, _:df_18_74, _:df_18_76, _:df_18_77, _:df_18_78, _:df_18_79, _:df_18_80, _:df_18_82, _:df_18_84, _:df_18_85, _:df_18_91, _:df_18_92, _:df_18_94, <https://def.nde.nl/dataset#AccrualPeriodicityProperty>, <https://def.nde.nl/dataset#AccessRightsProperty>;
+    <http://www.w3.org/ns/shacl#targetClass> <https://schema.org/Dataset>;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_22 <http://www.w3.org/ns/shacl#description> "De naam van de dataset."@nl, "A name given to the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_23;
+    <http://www.w3.org/ns/shacl#message> "Voeg een titel toe"@nl, "Add a title"@en.
+_:df_18_23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_24;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_25.
+_:df_18_24 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_26;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_26 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+<https://def.nde.nl/dataset#SchemaDescriptionProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een beschrijving van de inhoud van de dataset.\n        Deze is bij voorkeur minimaal drie zinnen en maximaal één alinea lang (2000 karakters).\n        De vindbaarheid van de dataset wordt onder andere bepaald door de kwaliteit van de beschrijving.\n        Denk hierbij aan verschillende gebruikers, vakgenoten maar ook anderen,\n        waarvoor de tekst begrijpelijk moet zijn."@nl, "A description of the contents of the dataset.\n        Preferably at least three sentences and at most one paragraph (2,000 characters).\n        The discoverability of the dataset depends in part on the quality of the description.\n        Consider different audiences – both domain experts and others –\n        for whom the text should be understandable."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_217.
+_:df_18_27 <http://www.w3.org/ns/shacl#description> "De organisatie of persoon die verantwoordelijk is voor de publicatie van de dataset."@nl, "An entity (organisation or person) responsible for making the Dataset available."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/publisher>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#or> _:df_18_28;
+    <http://www.w3.org/ns/shacl#message> "Voeg een uitgever toe"@nl, "Add a publisher"@en.
+_:df_18_28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_29;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_30.
+_:df_18_29 <http://www.w3.org/ns/shacl#class> <https://schema.org/Organization>.
+_:df_18_30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_31;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_31 <http://www.w3.org/ns/shacl#class> <https://schema.org/Person>.
+_:df_18_32 <http://www.w3.org/ns/shacl#path> <https://schema.org/publisher>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één uitgever"@nl, "Use at most one publisher"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_33 <http://www.w3.org/ns/shacl#description> "Licentie die van toepassing is op de dataset. Deze licentie wordt overgenomen door alle distributies die geen eigen licentie hebben."@nl, "License applicable to the dataset. This license is inherited by all distributions that do not specify their own license. Publishers MUST make known under which <a href=\"https://www.w3.org/TR/dwbp/#licenses\">license</a> the dataset may be used.\n\nThis license specifies the conditions under which the metadata records in the dataset may be accessed and reused. It does not cover the heritage objects (either physical or digital) that the metadata describes. Access conditions for these objects should be specified in their own descriptions within the dataset.\n\nThe DERA requires metadata to be published openly, so this value SHOULD be an open license that allows consumers to reuse the data, such as `http://creativecommons.org/publicdomain/zero/1.0/` (CC0), `http://creativecommons.org/licenses/by/4.0/` (CC BY 4.0), or `http://creativecommons.org/licenses/by-sa/4.0/` (CC BY-SA 4.0). Adopting a non-open license will severely limit reuse and does not comply with the DERA principles.\n\nThe value MUST be the canonical URI of a license. For example, use `http://creativecommons.org/publicdomain/zero/1.0/` instead of `http://creativecommons.org/publicdomain/zero/1.0/deed.nl`."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een licentie toe"@nl, "Add a license"@en.
+<https://def.nde.nl/dataset#SchemaLicenseIriProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_241;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_34 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één licentie"@nl, "Use at most one license"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_35 <https://def.nde.nl#futureChange> _:df_18_36;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een van de Creative Commons-licenties, zoals http://creativecommons.org/publicdomain/zero/1.0/ (CC0) of http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0)"@nl, "Use one of the Creative Commons licenses, such as http://creativecommons.org/publicdomain/zero/1.0/ (CC0) or http://creativecommons.org/licenses/by/4.0/ (CC BY 4.0)"@en;
+    <http://www.w3.org/ns/shacl#in> _:df_18_37.
+_:df_18_36 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_38.
+_:df_18_38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/publicdomain/mark/1.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_39.
+_:df_18_39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/licenses/by/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_40.
+_:df_18_40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/licenses/by-sa/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_41.
+_:df_18_41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/licenses/by-nc/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_42.
+_:df_18_42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/licenses/by-nc-sa/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_43.
+_:df_18_43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/licenses/by-nd/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_44.
+_:df_18_44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://creativecommons.org/licenses/by-nc-nd/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_45.
+_:df_18_45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_46.
+_:df_18_46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/publicdomain/mark/1.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_47.
+_:df_18_47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/licenses/by/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_48.
+_:df_18_48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/licenses/by-sa/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_49.
+_:df_18_49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/licenses/by-nc/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_50.
+_:df_18_50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/licenses/by-nc-sa/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_51.
+_:df_18_51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/licenses/by-nd/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_52.
+_:df_18_52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://creativecommons.org/licenses/by-nc-nd/4.0/>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_53 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Eindig de Creative Commons-licentie-URI met een slash"@nl, "End the Creative Commons license URI with a slash"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseCreativeCommonsTrailingSlashShape>.
+<https://def.nde.nl/dataset#LicenseCreativeCommonsTrailingSlashShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_227.
+_:df_18_54 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de Creative Commons-URI zelf, geen opendefinition.org-alias"@nl, "Use the Creative Commons URI directly, not an opendefinition.org alias"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseNotOpenDefinitionShape>.
+<https://def.nde.nl/dataset#LicenseNotOpenDefinitionShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#not> _:df_18_232.
+_:df_18_55 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de officiële Open Data Commons-licentie-URI met versienummer, bijv. http://opendatacommons.org/licenses/odbl/1.0/"@nl, "Use an official Open Data Commons licence URI with a version number, such as http://opendatacommons.org/licenses/odbl/1.0/"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseOpenDataCommonsShape>.
+<https://def.nde.nl/dataset#LicenseOpenDataCommonsShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_233.
+_:df_18_56 <http://www.w3.org/ns/shacl#class> <https://schema.org/DataDownload>;
+    <http://www.w3.org/ns/shacl#description> "Distributies waarmee de dataset kan worden opgehaald, bijvoorbeeld als download of via een API."@nl, "Distributions through which the dataset can be retrieved, such as as a download or via an API."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/distribution>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>.
+_:df_18_57 <http://www.w3.org/ns/shacl#description> "De organisatie of persoon die verantwoordelijk is voor het creëren van de beschreven dataset."@nl, "An entity (organisation or person) responsible for producing the dataset."@en;
+    <https://def.nde.nl#futureChange> _:df_18_58;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/creator>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_59;
+    <http://www.w3.org/ns/shacl#message> "Voeg een maker toe"@nl, "Add a creator"@en.
+_:df_18_58 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_60;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_61.
+_:df_18_60 <http://www.w3.org/ns/shacl#class> <https://schema.org/Organization>.
+_:df_18_61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_62;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_62 <http://www.w3.org/ns/shacl#class> <https://schema.org/Person>.
+_:df_18_63 <http://www.w3.org/ns/shacl#description> "De datum van formele uitgifte (bijvoorbeeld publicatie) van de dataset."@nl, "The date of formal issuance (such as publication) of the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/datePublished>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de publicatiedatum in"@nl, "Enter the publication date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+<https://def.nde.nl/dataset#SchemaDatePublishedDatatypeProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_262;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/datePublished>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_254;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:date, xsd:dateTime, schema:Date of schema:DateTime"@nl, "Use a value of type xsd:date, xsd:dateTime, schema:Date or schema:DateTime"@en.
+<https://def.nde.nl/dataset#SchemaDatePublishedIso8601Property> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_263;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/datePublished>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum, bijv. 2026-04-14 of 2026-04-14T10:30:00"@nl, "Use an ISO 8601 date, such as 2026-04-14 or 2026-04-14T10:30:00"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}.*)?$".
+_:df_18_64 <http://www.w3.org/ns/shacl#description> "De datum waarop de dataset is aangemaakt."@nl, "The date on which the dataset was created."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateCreated>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de aanmaakdatum in"@nl, "Enter the creation date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+<https://def.nde.nl/dataset#SchemaDateCreatedDatatypeProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_252;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateCreated>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_244;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:date, xsd:dateTime, schema:Date of schema:DateTime"@nl, "Use a value of type xsd:date, xsd:dateTime, schema:Date or schema:DateTime"@en.
+<https://def.nde.nl/dataset#SchemaDateCreatedIso8601Property> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_253;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateCreated>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum, bijv. 2026-04-14 of 2026-04-14T10:30:00"@nl, "Use an ISO 8601 date, such as 2026-04-14 or 2026-04-14T10:30:00"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}.*)?$".
+_:df_18_65 <http://www.w3.org/ns/shacl#description> "De meest recente datum waarop de dataset is gewijzigd of aangepast."@nl, "The most recent date on which the dataset was changed or modified."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateModified>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de wijzigingsdatum in"@nl, "Enter the last modified date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+<https://def.nde.nl/dataset#SchemaDateModifiedDatatypeProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_272;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateModified>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_264;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:date, xsd:dateTime, schema:Date of schema:DateTime"@nl, "Use a value of type xsd:date, xsd:dateTime, schema:Date or schema:DateTime"@en.
+<https://def.nde.nl/dataset#SchemaDateModifiedIso8601Property> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_273;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateModified>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum, bijv. 2026-04-14 of 2026-04-14T10:30:00"@nl, "Use an ISO 8601 date, such as 2026-04-14 or 2026-04-14T10:30:00"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}.*)?$".
+_:df_18_66 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Versieaanduiding van de dataset, bijvoorbeeld een semantisch versienummer of een datum."@nl, "Version identifier of the dataset, such as a semantic version number or a date."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/version>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één versie (bijv. 1.0 of 2.1)"@nl, "Use at most one version (such as 1.0 or 2.1)"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_67 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "De natuurlijke taal van de tekstuele waardes in de dataset – dus van de metadata-records zelf (titels, omschrijvingen enzovoort). Gebruik een BCP 47-taalcode, bijv. `nl` of `en`."@nl, "The natural language of the textual values within the dataset – that is, of the metadata records themselves (titles, descriptions, and so on). Use a BCP 47 language code, such as `nl` or `en`."@en;
+    <https://def.nde.nl#futureChange> _:df_18_68;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/inLanguage>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een BCP 47-taalcode, bijv. nl of en"@nl, "Use a BCP 47 language code, such as nl or en"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[a-zA-Z]{2,3}(-[a-zA-Z0-9]+)*$".
+_:df_18_68 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#pattern> "^[a-zA-Z]{2,3}(-[a-zA-Z0-9]+)*$".
+_:df_18_69 <http://www.w3.org/ns/shacl#path> <https://schema.org/inLanguage>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de taal of talen in"@nl, "Enter the language or languages of the dataset"@en.
+_:df_18_70 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een webpagina die toegang biedt tot de dataset, zijn distributies of aanvullende informatie. Niet nodig als de URI van de dataset zelf al naar een HTML-pagina leidt. De menselijk leesbare beschrijving MOET consistent zijn met en minstens alle details (zoals distributies) uit de RDF-datasetbeschrijving bevatten."@nl, "A web page that provides access to the Dataset, its Distributions and/or additional information. Not needed when the dataset URI itself resolves to an HTML page. The human-readable description MUST be consistent with and include at least all details (such as distributions) from the RDF dataset description."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/mainEntityOfPage>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_71 <http://www.w3.org/ns/shacl#path> <https://schema.org/mainEntityOfPage>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URL die begint met https://"@nl, "Use a web URL starting with https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_72 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "De URI van een dataset waarop deze dataset is gebaseerd (voorheen schema:isBasedOnUrl)."@nl, "The URI of a dataset this dataset is based on (previously schema:isBasedOnUrl)."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/isBasedOn>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_73 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een citaat of verwijzing voor de dataset."@nl, "A citation or reference for the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/citation>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_74 <http://www.w3.org/ns/shacl#description> "`schema:genre` is verouderd. Gebruik `schema:about` met een URI (bijv. uit AAT of GTAA via het Termennetwerk) voor zowel onderwerp als materiaaltype."@nl, "`schema:genre` is deprecated. Use `schema:about` with a URI (e.g. from AAT or GTAA via the Network of Terms) for both subject and material type."@en;
+    <https://def.nde.nl#futureChange> _:df_18_75;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/genre>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "schema:genre is verouderd; gebruik schema:about met een URI (bijvoorbeeld uit het Termennetwerk)"@nl, "schema:genre is deprecated; use schema:about with a URI (for example from the Network of Terms)"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 0.
+_:df_18_75 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_76 <http://www.w3.org/ns/shacl#description> "Het onderwerp of de onderwerpen van de dataset, waaronder zowel inhoudelijke thema’s (zoals ‘Wederopbouw’ of ‘Koloniale geschiedenis’) als materiaaltypen (zoals ‘Foto’s’ of ‘Bouwtekeningen’). Gebruik een URI uit een gecontroleerd vocabulaire (bijv. AAT, GTAA of Brinkman via het <a href=\"https://termennetwerk.netwerkdigitaalerfgoed.nl/\">Termennetwerk</a>)."@nl, "The subject matter of the dataset, covering both topical themes (such as ‘post-war reconstruction’ or ‘colonial history’) and material types (such as ‘photographs’ or ‘architectural drawings’). Use a URI from a controlled vocabulary (e.g. AAT, GTAA, or Brinkman via the <a href=\"https://termennetwerk.netwerkdigitaalerfgoed.nl/en\">Network of Terms</a>)."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/about>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een URI toe die het onderwerp of materiaaltype van de dataset beschrijft (bijv. uit het Termennetwerk)"@nl, "Add a URI describing the dataset’s subject matter or material type (for example from the Network of Terms)"@en.
+_:df_18_77 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/about>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_78 <http://www.w3.org/ns/shacl#path> <https://schema.org/about>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_79 <http://www.w3.org/ns/shacl#description> "Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Gebruik een URI uit een gecontroleerd vocabulaire zoals <a href=\"https://www.geonames.org/\">GeoNames</a> via het <a href=\"https://termennetwerk.netwerkdigitaalerfgoed.nl/\">Termennetwerk</a>. Geef alleen het meest specifieke (laagste) niveau op, bijvoorbeeld de URI voor Roermond en niet die voor Limburg of Nederland. Bredere gebieden kunnen worden afgeleid op basis van de hiërarchische relaties van de term."@nl, "The geographical area to which the data in the dataset pertains. Use a URI from a controlled vocabulary such as <a href=\"https://www.geonames.org/\">GeoNames</a> via the <a href=\"https://termennetwerk.netwerkdigitaalerfgoed.nl/en\">Network of Terms</a>. Provide only the most specific (lowest) level, for example the URI for Roermond and not the one for Limburg or the Netherlands. Broader areas can be derived from the term’s hierarchical relations."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/spatialCoverage>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een gebiedsaanduiding toe (bijv. een URI uit GeoNames)"@nl, "Add spatial coverage (such as a GeoNames URI)"@en.
+_:df_18_80 <http://www.w3.org/ns/shacl#description> "De gebiedsaanduiding moet een HTTP(S)-URI zijn, bijvoorbeeld van <a href=\"https://www.geonames.org/\">GeoNames</a>."@nl, "Spatial coverage must be an HTTP(S) URI, such as from <a href=\"https://www.geonames.org/\">GeoNames</a>."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_81;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/spatialCoverage>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_81 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_82 <https://def.nde.nl#futureChange> _:df_18_83;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/spatialCoverage>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_83 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_84 <http://www.w3.org/ns/shacl#description> "De tijdsperiode waar de dataset betrekking op heeft. De waarde moet een ISO 8601-datum of -tijdsinterval zijn (bijv. ‘2011’, ‘2011/2012’, ‘1889-06/07’ voor een verkorte notatie, ‘-0431/-0404’ of ‘-13000/-10000’ voor v.Chr.-dateringen, of ‘1440/..’ voor een open einde), of een HTTP(S)-URI."@nl, "The time period to which the dataset pertains. The value must be an ISO 8601 date or time interval (such as ‘2011’, ‘2011/2012’, ‘1889-06/07’ for shortened notation, ‘-0431/-0404’ or ‘-13000/-10000’ for BCE dates, or ‘1440/..’ for an open-ended range), or an HTTP(S) URI."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/temporalCoverage>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een tijdsaanduiding toe"@nl, "Add temporal coverage"@en.
+_:df_18_85 <https://def.nde.nl#futureChange> _:df_18_90;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/temporalCoverage>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_86;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum of -tijdsinterval (bijv. ‘2011/2012’, ‘-0431/-0404’ voor v.Chr., of ‘1440/..’) of een web-URI"@nl, "Use an ISO 8601 date or time interval (such as ‘2011/2012’, ‘-0431/-0404’ for BCE, or ‘1440/..’) or a web URI"@en.
+_:df_18_86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_87;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_88.
+_:df_18_87 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_89;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_89 <http://www.w3.org/ns/shacl#pattern> "^(-?\\d{4,}(-\\d{2}(-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?)?)?)?|\\.\\.)(/(-?\\d{4,}(-\\d{2}(-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?)?)?)?|\\d{2}(-\\d{2})?|\\.\\.))?$".
+_:df_18_90 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_91 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Verwijst naar een dataset die onderdeel is van deze dataset en ook als afzonderlijke dataset beschikbaar is."@nl, "Indicates a dataset that is part of this dataset and also available as a separate dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/hasPart>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_92 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "De HTTP IRI(s) van de datacatalogus of -catalogi waartoe de dataset behoort."@nl, "The HTTP IRI(s) of the data catalog(s) that the dataset belongs to."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_93;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/includedInDataCatalog>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_93 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_94 <https://def.nde.nl#futureChange> _:df_18_95;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/includedInDataCatalog>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_95 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#AccrualPeriodicityProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Hoe vaak de dataset wordt bijgewerkt.\n        Gebruik een waarde uit de EU-frequentielijst,\n        bijvoorbeeld http://publications.europa.eu/resource/authority/frequency/WEEKLY ."@nl, "How often the dataset is updated.\n        Use a value from the EU frequency list,\n        for example http://publications.europa.eu/resource/authority/frequency/WEEKLY ."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/accrualPeriodicity>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een officiële frequentie-URL uit de EU-lijst (bijvoorbeeld http://publications.europa.eu/resource/authority/frequency/WEEKLY) in plaats van tekst zoals ‘wekelijks’"@nl, "Use a valid frequency URL from the EU list (such as http://publications.europa.eu/resource/authority/frequency/WEEKLY) instead of text"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#pattern> "^http://publications\\.europa\\.eu/resource/authority/frequency/".
+<https://def.nde.nl/dataset#AccessRightsProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Informatie over wie toegang heeft tot de dataset. Gebruik een waarde uit het EU Access Rights-vocabulaire. Standaard `PUBLIC` als er geen waarde is opgegeven."@nl, "Information about who can access the dataset. Use a value from the EU Access Rights vocabulary. Defaults to `PUBLIC` if not provided."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/accessRights>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#message> "Kies toegangsrechten uit de lijst (EU Access Rights)"@nl, "Select access rights from the EU Access Rights list"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1;
+    <http://www.w3.org/ns/shacl#in> _:df_18_238.
+<https://def.nde.nl/dataset#DistributionShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_96;
+    <http://www.w3.org/ns/shacl#message> "Geef in schema:encodingFormat het MIME-type van de dataset op (bijv. application/n-triples) of in schema:usageInfo het API-protocol (bijv. https://www.w3.org/TR/sparql11-protocol/)"@nl, "Specify the dataset format in schema:encodingFormat (such as application/n-triples) or the API protocol in schema:usageInfo (such as https://www.w3.org/TR/sparql11-protocol/)"@en;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#SchemaLicenseIriProperty>, <https://def.nde.nl/dataset#SchemaDatePublishedDatatypeProperty>, <https://def.nde.nl/dataset#SchemaDatePublishedIso8601Property>, <https://def.nde.nl/dataset#SchemaDateModifiedDatatypeProperty>, <https://def.nde.nl/dataset#SchemaDateModifiedIso8601Property>, _:df_18_102, _:df_18_103, _:df_18_105, _:df_18_107, _:df_18_108, _:df_18_110, _:df_18_113, _:df_18_120, _:df_18_123, _:df_18_128, _:df_18_130, _:df_18_131, _:df_18_132, _:df_18_134, _:df_18_135, _:df_18_136, _:df_18_137, _:df_18_138, _:df_18_139, _:df_18_140, _:df_18_142, _:df_18_144, _:df_18_145, _:df_18_146, _:df_18_147, _:df_18_148;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/distribution>.
+_:df_18_96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_97;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_99.
+_:df_18_97 <http://www.w3.org/ns/shacl#property> _:df_18_98.
+_:df_18_98 <http://www.w3.org/ns/shacl#path> <https://schema.org/encodingFormat>;
+    <http://www.w3.org/ns/shacl#minCount> 1.
+_:df_18_99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_100;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_100 <http://www.w3.org/ns/shacl#property> _:df_18_101.
+_:df_18_101 <http://www.w3.org/ns/shacl#path> <https://schema.org/usageInfo>;
+    <http://www.w3.org/ns/shacl#minCount> 1.
+_:df_18_102 <http://www.w3.org/ns/shacl#description> "De URL die rechtstreeks toegang biedt tot de distributie zelf: het databestand of het endpoint van de web-API.\n                Gebruik `schema:documentation` als er daarnaast een documentatiepagina is die de distributie beschrijft of ontsluit (zoals een SPARQL-UI of een downloadlandingspagina)."@nl, "The URL that provides direct access to the distribution itself: the data file or the web API endpoint.\n                Use `schema:documentation` if there is also a documentation page that describes or provides access to the distribution (such as a SPARQL UI or a download landing page)."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/contentUrl>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#message> "Voeg de URL toe waar de distributie rechtstreeks toegankelijk is"@nl, "Add the URL where the distribution can be directly accessed"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_103 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_104;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/contentUrl>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_104 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_105 <https://def.nde.nl#futureChange> _:df_18_106;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/contentUrl>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een geldige HTTPS-URL voor de distributie"@nl, "Use a valid HTTPS URL for the distribution"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_106 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_107 <http://www.w3.org/ns/shacl#description> "Het mediatype van het downloadbare bestand. Gebruik een waarde uit de IANA media types-lijst. De waarde geeft het mediatype aan van de response van schema:contentUrl wanneer er geen Accept-header wordt meegestuurd. Bij gecomprimeerde distributies moet het compressieformaat (bijv. zip, gzip) worden toegevoegd (bijv. text/turtle+gzip)."@nl, "The media type of the downloadable file. Use a value from the IANA media types list. The value should indicate the media type of the response of schema:contentUrl when no Accept header is included in the request. When the distribution is compressed, the compression format (such as `zip`, `gzip`) must be included (such as `text/turtle+gzip`)."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/encodingFormat>;
+    <http://www.w3.org/ns/shacl#message> "Vul een geldig MIME-type in, bijv. application/n-triples"@nl, "Enter a valid MIME type, such as application/n-triples"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[a-zA-Z]+/[a-zA-Z0-9][a-zA-Z0-9!#$&\\-^_.+]*$".
+_:df_18_108 <https://def.nde.nl#futureChange> _:df_18_109;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/encodingFormat>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één MIME-type per distributie"@nl, "Use at most one MIME type per distribution"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_109 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_110 <https://def.nde.nl#futureChange> _:df_18_112;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/encodingFormat>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Verwijder het SPARQL MIME-type uit schema:encodingFormat; SPARQL-endpoints worden gedeclareerd via schema:usageInfo"@nl, "Remove the SPARQL MIME type from schema:encodingFormat; SPARQL endpoints are declared via schema:usageInfo"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_111.
+_:df_18_111 <http://www.w3.org/ns/shacl#pattern> "application/sparql-".
+_:df_18_112 <http://www.w3.org/2000/01/rdf-schema#label> "geen SPARQL-mediatype"@nl, "no SPARQL media type"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_113 <https://def.nde.nl#futureChange> _:df_18_119;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/encodingFormat>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Een kaal compressietype (zoals application/zip of application/gzip) geeft niet aan welk mediatype de ingepakte bestanden hebben. Declareer het werkelijke mediatype met een compressiesuffix, bijvoorbeeld application/rdf+xml+zip of text/csv+gzip"@nl, "A bare compression type (such as application/zip or application/gzip) does not indicate the media type of the packaged file(s). Declare the actual media type with a compression suffix, such as application/rdf+xml+zip or text/csv+gzip"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_114.
+_:df_18_115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "application/zip";
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_116.
+_:df_18_116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "application/x-zip-compressed";
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_117.
+_:df_18_117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "application/gzip";
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_118.
+_:df_18_118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "application/x-gzip";
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_114 <http://www.w3.org/ns/shacl#in> _:df_18_115.
+_:df_18_119 <http://www.w3.org/2000/01/rdf-schema#label> "geen kaal compressietype"@nl, "no bare compression type"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_120 <https://def.nde.nl#futureChange> _:df_18_122;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/encodingFormat>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een geregistreerd IANA-mediatype. Mediatypes met het voorvoegsel x- (zoals application/x-zip-compressed) zijn niet geregistreerd bij IANA; gebruik het geregistreerde type, bijvoorbeeld application/zip"@nl, "Use a registered IANA media type. Media types with the x- prefix (such as application/x-zip-compressed) are not registered with IANA; use the registered type, such as application/zip"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_121.
+_:df_18_121 <http://www.w3.org/ns/shacl#pattern> "^[a-zA-Z]+/x-".
+_:df_18_122 <http://www.w3.org/2000/01/rdf-schema#label> "geen x-mediatype"@nl, "no x- media type"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_123 <http://www.w3.org/ns/shacl#description> "Beschrijving van de distributie"@nl, "Distribution description"@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_124;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string of rdf:langString"@nl, "Use a value of type xsd:string or rdf:langString"@en.
+_:df_18_124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_125;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_126.
+_:df_18_125 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_127;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_127 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_128 <https://def.nde.nl#futureChange> _:df_18_129;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_129 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_130 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "De datum van formele uitgifte (bijvoorbeeld publicatie) van de distributie."@nl, "The date of formal issuance (such as publication) of the distribution."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/datePublished>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_131 <http://www.w3.org/ns/shacl#description> "De meest recente datum waarop de distributie is gewijzigd of aangepast."@nl, "The most recent date on which the distribution was changed or modified."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/dateModified>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_132 <http://www.w3.org/ns/shacl#description> "Taal of talen waarin de distributie beschikbaar is. Gebruik een BCP 47-taalcode, bijv. `nl`."@nl, "Language or languages in which the distribution is available. Use a BCP 47 language code, such as `nl`."@en;
+    <https://def.nde.nl#futureChange> _:df_18_133;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/inLanguage>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een BCP 47-taalcode, bijv. nl of en"@nl, "Use a BCP 47 language code, such as nl or en"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[a-zA-Z]{2,3}(-[a-zA-Z0-9]+)*$".
+_:df_18_133 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#pattern> "^[a-zA-Z]{2,3}(-[a-zA-Z0-9]+)*$".
+_:df_18_134 <http://www.w3.org/ns/shacl#description> "Licentie die van toepassing is op deze distributie en die de licentie van de bovenliggende dataset overschrijft. Optioneel; gebruik dit alleen wanneer de distributie een andere licentie heeft dan de dataset."@nl, "License applicable to this distribution, overriding the parent dataset's license. Optional; only set this when the distribution carries a different license from the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_135 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één licentie"@nl, "Use at most one license"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_136 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Eindig de Creative Commons-licentie-URI met een slash"@nl, "End the Creative Commons license URI with a slash"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseCreativeCommonsTrailingSlashShape>.
+_:df_18_137 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de Creative Commons-URI zelf, geen opendefinition.org-alias"@nl, "Use the Creative Commons URI directly, not an opendefinition.org alias"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseNotOpenDefinitionShape>.
+_:df_18_138 <http://www.w3.org/ns/shacl#path> <https://schema.org/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de officiële Open Data Commons-licentie-URI met versienummer, bijv. http://opendatacommons.org/licenses/odbl/1.0/"@nl, "Use an official Open Data Commons licence URI with a version number, such as http://opendatacommons.org/licenses/odbl/1.0/"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseOpenDataCommonsShape>.
+_:df_18_139 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Bestandsgrootte van de distributie in bytes."@nl, "Distribution file size in bytes."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/contentSize>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_140 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een link naar de documentatie: voor downloads het applicatieprofiel, vocabulaire of ontologie; voor web-API’s (zoals SPARQL of OAI-PMH) de protocolspecificatie.\n                Hiermee kunnen gebruikers een volledige dump onderscheiden van een API die maar een deel van de data ontsluit."@nl, "A link to the documentation: for downloads, the application profile, vocabulary or ontology; for web APIs (such as SPARQL or OAI-PMH), the protocol specification.\n                It lets consumers tell a full data dump from an API that exposes only part of the data."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_141;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/usageInfo>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_141 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_142 <https://def.nde.nl#futureChange> _:df_18_143;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/usageInfo>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Use a web URI starting with http:// or https://"@en, "Gebruik een web URI die begint met http:// of https://"@nl;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_143 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_144 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een documentatiepagina die deze distributie beschrijft of ontsluit, zoals een SPARQL-UI of een downloadlandingspagina.\n                `schema:contentUrl` wijst naar de distributie zelf (het databestand of het API-endpoint)."@nl, "A documentation page that describes or provides access to this distribution, such as a SPARQL UI or a download landing page.\n                `schema:contentUrl` points to the distribution itself (the data file or the API endpoint)."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/documentation>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en;
+    <http://www.w3.org/ns/shacl#name> "Documentation"@en.
+_:df_18_145 <http://www.w3.org/ns/shacl#path> <https://schema.org/documentation>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URL die begint met https://"@nl, "Use a web URL starting with https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_146 <http://www.w3.org/ns/shacl#path> <https://schema.org/description>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een beschrijving toe"@nl, "Add a description"@en.
+_:df_18_147 <http://www.w3.org/ns/shacl#path> <https://schema.org/contentUrl>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "De contentUrl is niet bereikbaar; de distributie kan niet worden opgehaald."@nl, "The contentUrl is not reachable; the distribution cannot be retrieved."@en;
+    <https://def.nde.nl/probe#probeReachable> true.
+_:df_18_148 <http://www.w3.org/ns/shacl#path> <https://schema.org/contentUrl>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Het Content-Type van contentUrl komt niet overeen met het opgegeven schema:encodingFormat."@nl, "The Content-Type of contentUrl does not match the declared schema:encodingFormat."@en;
+    <https://def.nde.nl/probe#probeFormatMatch> true.
+<https://def.nde.nl/dataset#DistributionSparqlEncodingRequiresProtocolShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <https://def.nde.nl#futureChange> _:df_18_149;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg de SPARQL protocol-URI (https://www.w3.org/TR/sparql11-protocol/) toe aan schema:usageInfo voor SPARQL-endpoints"@nl, "Add the SPARQL protocol URI (https://www.w3.org/TR/sparql11-protocol/) to schema:usageInfo for SPARQL endpoints"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/distribution>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_150.
+_:df_18_149 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_150 <http://www.w3.org/ns/shacl#select> "\n            PREFIX schema: <https://schema.org/>\n            SELECT $this ?path\n            WHERE {\n                $this schema:encodingFormat ?format .\n                FILTER(CONTAINS(STR(?format), \"application/sparql-\"))\n                FILTER NOT EXISTS {\n                    $this schema:usageInfo <https://www.w3.org/TR/sparql11-protocol/> .\n                }\n                BIND(schema:usageInfo AS ?path)\n            }\n        ".
+<http://www.w3.org/ns/dcat#DistributionSparqlMediaTypeRequiresProtocolShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <https://def.nde.nl#futureChange> _:df_18_151;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg de SPARQL protocol-URI (https://www.w3.org/TR/sparql11-protocol/) toe aan dct:conformsTo voor SPARQL-endpoints"@nl, "Add the SPARQL protocol URI (https://www.w3.org/TR/sparql11-protocol/) to dct:conformsTo for SPARQL endpoints"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <http://www.w3.org/ns/dcat#distribution>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_152.
+_:df_18_151 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_152 <http://www.w3.org/ns/shacl#select> "\n            PREFIX dcat: <http://www.w3.org/ns/dcat#>\n            PREFIX dct: <http://purl.org/dc/terms/>\n            SELECT $this ?path\n            WHERE {\n                $this dcat:mediaType ?mediaType .\n                FILTER(CONTAINS(STR(?mediaType), \"application/sparql-\"))\n                FILTER NOT EXISTS {\n                    $this dct:conformsTo <https://www.w3.org/TR/sparql11-protocol/> .\n                }\n                BIND(dct:conformsTo AS ?path)\n            }\n        ".
+<https://def.nde.nl/dataset#AgentShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#SchemaNameUniqueLangProperty>, <https://def.nde.nl/dataset#SchemaNameLangStringProperty>, _:df_18_153, _:df_18_158, _:df_18_163, _:df_18_164, _:df_18_166, _:df_18_171, _:df_18_172, _:df_18_173;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>.
+_:df_18_153 <http://www.w3.org/ns/shacl#description> "De volledige naam van de uitgever of maker."@nl, "The full name of the publisher or creator."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_154;
+    <http://www.w3.org/ns/shacl#message> "Vul een naam in voor de uitgever of maker"@nl, "Enter a name for the publisher or creator"@en.
+_:df_18_154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_155;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_156.
+_:df_18_155 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_157;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_157 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_158 <http://www.w3.org/ns/shacl#description> "Alternatieve namen, zoals een afkorting waaronder de organisatie bekendstaat."@nl, "Alternative names such as an abbreviation that the organization is known under."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/alternateName>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#or> _:df_18_159;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string of rdf:langString"@nl, "Use a value of type xsd:string or rdf:langString"@en.
+_:df_18_159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_160;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_161.
+_:df_18_160 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_162;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_162 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_163 <http://www.w3.org/ns/shacl#path> <https://schema.org/alternateName>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_164 <https://def.nde.nl#futureChange> _:df_18_165;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/alternateName>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_165 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_166 <http://www.w3.org/ns/shacl#description> "Identificatie(s) van de organisatie, minimaal de <a href=\"https://www.nationaalarchief.nl/archiveren/kennisbank/isil-codes\">ISIL-code</a>."@nl, "Identifier(s) of the organization, at least its <a href=\"https://www.nationaalarchief.nl/archiveren/kennisbank/isil-codes\">ISIL code</a>."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/identifier>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_167;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string of schema:PropertyValue"@nl, "Use a value of type xsd:string or schema:PropertyValue"@en.
+_:df_18_167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_168;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_169.
+_:df_18_168 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_170;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_170 <http://www.w3.org/ns/shacl#class> <https://schema.org/PropertyValue>.
+_:df_18_171 <http://www.w3.org/ns/shacl#description> "Verwijzingen naar de organisatie in andere databases."@nl, "Links to the organization in other databases."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/sameAs>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_172 <http://www.w3.org/ns/shacl#path> <https://schema.org/sameAs>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_173 <http://www.w3.org/ns/shacl#description> "Contactinformatie waar eindgebruikers terecht kunnen met vragen over de dataset. Gebruik bij voorkeur de gegevens van de afdeling die de dataset of catalogus beheert, niet die van een individuele medewerker."@nl, "Contact information where end users can get in touch with questions about the dataset. Preferably use the details of the department that manages the dataset or catalogue, rather than an individual employee."@en;
+    <https://def.nde.nl#futureChange> _:df_18_174;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/contactPoint>.
+_:df_18_174 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#AgentUriPatternShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://";
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>.
+<https://def.nde.nl/dataset#NonDurableNamespaceShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_175.
+_:df_18_175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_176;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_177.
+_:df_18_176 <http://www.w3.org/ns/shacl#pattern> "^https?://([^/:?#]+\\.)?adlibhosting\\.com([:/?#]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_178;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_179.
+_:df_18_178 <http://www.w3.org/ns/shacl#pattern> "^https?://([^/:?#]+\\.)?spinque\\.com([:/?#]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_180;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_181.
+_:df_18_180 <http://www.w3.org/ns/shacl#pattern> "^https?://([^/:?#]+\\.)?kleksi\\.com([:/?#]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_182;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_183.
+_:df_18_182 <http://www.w3.org/ns/shacl#pattern> "^https?://([^/:?#]+\\.)?xentropics\\.cloud([:/?#]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_184;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_185.
+_:df_18_184 <http://www.w3.org/ns/shacl#pattern> "^https?://([^/:?#]+\\.)?deventit\\.(net|nl)([:/?#]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_186;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_186 <http://www.w3.org/ns/shacl#pattern> "/AtlantisPubliek/";
+    <http://www.w3.org/ns/shacl#flags> "i".
+<https://def.nde.nl/dataset#AgentNotNonDurableNamespaceShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een URI die de organisatie zelf identificeert, niet een adres van de collectiesoftware of de softwareleverancier"@nl, "Use a URI that identifies the organization itself, not an address of its collection software or software supplier"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>, <http://purl.org/dc/terms/publisher>, <http://purl.org/dc/terms/creator>;
+    <http://www.w3.org/ns/shacl#not> <https://def.nde.nl/dataset#NonDurableNamespaceShape>.
+<https://def.nde.nl/dataset#AgentWikidataEntityShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_187;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de Wikidata-entiteit-URI (zoals http://www.wikidata.org/entity/Q474563), niet de Wikidata-webpagina"@nl, "Use the Wikidata entity URI (such as http://www.wikidata.org/entity/Q474563), not the Wikidata web page"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>, <http://purl.org/dc/terms/publisher>, <http://purl.org/dc/terms/creator>.
+_:df_18_187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_188;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_190.
+_:df_18_188 <http://www.w3.org/ns/shacl#not> _:df_18_189.
+_:df_18_189 <http://www.w3.org/ns/shacl#pattern> "^https?://([^/:?#]+\\.)?wikidata\\.org([:/?#]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_191;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_191 <http://www.w3.org/ns/shacl#pattern> "^https?://www\\.wikidata\\.org/entity/Q[0-9]+$".
+<https://def.nde.nl/dataset#AgentWikidataEntityHttpShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik http:// (niet https://) in de Wikidata-entiteit-URI"@nl, "Use http:// (not https://) in the Wikidata entity URI"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>, <http://purl.org/dc/terms/publisher>, <http://purl.org/dc/terms/creator>;
+    <http://www.w3.org/ns/shacl#not> _:df_18_192.
+_:df_18_192 <http://www.w3.org/ns/shacl#pattern> "^https://www\\.wikidata\\.org/entity/".
+<https://def.nde.nl/dataset#OrganizationContactPointRequiredShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <https://def.nde.nl#futureChange> _:df_18_193;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een contactpunt toe met naam en e-mailadres. Gebruik bij voorkeur de gegevens van de afdeling die de dataset of catalogus beheert"@nl, "Add a contact point with a name and email address, preferably of the department that manages the dataset or catalogue"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_194.
+_:df_18_193 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_194 <http://www.w3.org/ns/shacl#select> "\n            PREFIX schema: <https://schema.org/>\n            SELECT $this ?path WHERE {\n                $this a schema:Organization .\n                FILTER NOT EXISTS { $this schema:contactPoint ?cp }\n                BIND(schema:contactPoint AS ?path)\n            }\n        ".
+<https://def.nde.nl/dataset#OrganizationIdentifierRequiredShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een identificatie toe voor de organisatie, zoals een KvK-nummer of ISIL"@nl, "Add an identifier for the organisation, such as a Chamber of Commerce number or ISIL"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/publisher>, <https://schema.org/creator>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_195.
+_:df_18_195 <http://www.w3.org/ns/shacl#select> "\n            PREFIX schema: <https://schema.org/>\n            SELECT $this ?path WHERE {\n                $this a schema:Organization .\n                FILTER NOT EXISTS { $this schema:identifier ?id }\n                BIND(schema:identifier AS ?path)\n            }\n        ".
+<https://def.nde.nl/dataset#IdentifierPropertyIDRequiredShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Geef aan om welk type identifier het gaat (bijv. KvK of ISIL), naast de waarde"@nl, "Specify the type of identifier (such as ‘Chamber of Commerce’ or ‘ISIL’) in addition to the value"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/identifier>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_196.
+_:df_18_196 <http://www.w3.org/ns/shacl#select> "\n            PREFIX schema: <https://schema.org/>\n            SELECT $this ?path WHERE {\n                $this a schema:PropertyValue .\n                OPTIONAL { $this schema:propertyID ?pid }\n                FILTER (!bound(?pid) || !isURI(?pid))\n                BIND(schema:propertyID AS ?path)\n            }\n        ".
+<https://def.nde.nl/dataset#IdentifierValueRequiredShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Vul de waarde van de identifier in (bijv. een nummer of code)"@nl, "Enter the identifier value (such as a number or code)"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/identifier>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_197.
+_:df_18_197 <http://www.w3.org/ns/shacl#select> "\n            PREFIX schema: <https://schema.org/>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n            SELECT $this ?path WHERE {\n                $this a schema:PropertyValue .\n                OPTIONAL { $this schema:value ?v }\n                FILTER (!bound(?v) || !isLiteral(?v) || datatype(?v) != xsd:string)\n                BIND(schema:value AS ?path)\n            }\n        ".
+<https://def.nde.nl/dataset#IdentifierNameStringShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/identifier>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_198.
+_:df_18_198 <http://www.w3.org/ns/shacl#select> "\n            PREFIX schema: <https://schema.org/>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n            SELECT $this ?path WHERE {\n                $this a schema:PropertyValue .\n                $this schema:name ?n .\n                FILTER (!isLiteral(?n) || (datatype(?n) != xsd:string && datatype(?n) != rdf:langString))\n                BIND(schema:name AS ?path)\n            }\n        ".
+<https://def.nde.nl/dataset#IdentifierPropertyValueDescriptionShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#property> _:df_18_199, _:df_18_200;
+    <http://www.w3.org/ns/shacl#targetClass> <https://schema.org/PropertyValue>.
+_:df_18_199 <http://www.w3.org/ns/shacl#description> "Het type identificatie, bijvoorbeeld KvK of ISIL."@nl, "The type of identifier, such as Chamber of Commerce (KvK) or ISIL."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/propertyID>.
+_:df_18_200 <http://www.w3.org/ns/shacl#description> "De waarde van de identificatie, bijvoorbeeld een nummer of code."@nl, "The identifier value, such as a number or code."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/value>.
+<https://def.nde.nl/dataset#ContactPointShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#property> _:df_18_201, _:df_18_202, _:df_18_207, _:df_18_208, _:df_18_210, _:df_18_211, _:df_18_214;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <https://schema.org/contactPoint>.
+_:df_18_201 <http://www.w3.org/ns/shacl#description> "Naam van het contactpunt, bij voorkeur een afdeling (“Afdeling datasets”) in plaats van een individuele medewerker. Geef de waarde een taaltag, zodat een meertalige afdelingsnaam of een niet-Latijnse persoonsnaam in de juiste taal getoond kan worden."@nl, "Name of the contact point, preferably a department (“Datasets department”) rather than an individual employee. Tag the value with a language so that a multilingual department name or a non-Latin personal name can be shown in the appropriate language."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Vul een naam in voor het contactpunt"@nl, "Enter a name for the contact point"@en.
+_:df_18_202 <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_203.
+_:df_18_203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_204;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_205.
+_:df_18_204 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_206;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_206 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_207 <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_208 <https://def.nde.nl#futureChange> _:df_18_209;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/name>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_209 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_210 <http://www.w3.org/ns/shacl#description> "Het e-mailadres van het contactpunt, bij voorkeur een functioneel adres van de organisatie of afdeling."@nl, "The email address of the contact point, preferably a functional address of the organization or department."@en;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/email>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Vul een e-mailadres in voor het contactpunt"@nl, "Enter an email address for the contact point"@en.
+_:df_18_211 <https://def.nde.nl#futureChange> _:df_18_213;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/email>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Vervang het voorbeeldadres van het contactpunt door een echt e-mailadres"@nl, "Replace the placeholder email address of the contact point with a real one"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_212.
+_:df_18_212 <http://www.w3.org/ns/shacl#pattern> "@([^@/?#,\\s]+\\.)?(example(\\.(com|net|org))?|test|invalid|localhost)([?#,\\s]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_213 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_214 <https://def.nde.nl#futureChange> _:df_18_216;
+    <http://www.w3.org/ns/shacl#path> <https://schema.org/email>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Verwijder de dubbele mailto: uit het e-mailadres van het contactpunt"@nl, "Remove the duplicate mailto: from the email address of the contact point"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_215.
+_:df_18_215 <http://www.w3.org/ns/shacl#pattern> "^mailto:(\\s|%20)*mailto:";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_216 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_218;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_219.
+_:df_18_218 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_220;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_220 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_221 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_222 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcTitleLangStringProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_223;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_223 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcDescriptionLangStringProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_224;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_224 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#FoafNameLangStringProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_225;
+    <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/name>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_225 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_226 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_228;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_230.
+_:df_18_228 <http://www.w3.org/ns/shacl#not> _:df_18_229.
+_:df_18_229 <http://www.w3.org/ns/shacl#pattern> "^https?://creativecommons\\.org/".
+_:df_18_230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_231;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_231 <http://www.w3.org/ns/shacl#pattern> "^https?://creativecommons\\.org/.+/$".
+_:df_18_232 <http://www.w3.org/ns/shacl#pattern> "^https?://www\\.opendefinition\\.org/licenses/".
+_:df_18_233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_234;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_236.
+_:df_18_234 <http://www.w3.org/ns/shacl#not> _:df_18_235.
+_:df_18_235 <http://www.w3.org/ns/shacl#pattern> "opendatacommons\\.org".
+_:df_18_236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_237;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_237 <http://www.w3.org/ns/shacl#pattern> "^http://opendatacommons\\.org/licenses/[^/]+/[0-9]+\\.[0-9]+/$".
+_:df_18_238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://publications.europa.eu/resource/authority/access-right/PUBLIC>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_239.
+_:df_18_239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_240.
+_:df_18_240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC>;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_241 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcLanguageAuthorityProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_243;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een taal-URI uit de EU-lijst (bijvoorbeeld http://publications.europa.eu/resource/authority/language/NLD) in plaats van een taalcode zoals ‘nl’"@nl, "Use a language URI from the EU list (such as http://publications.europa.eu/resource/authority/language/NLD) instead of a language code such as ‘nl’"@en;
+    <http://www.w3.org/ns/shacl#node> _:df_18_242.
+_:df_18_242 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#pattern> "^http://publications\\.europa\\.eu/resource/authority/language/".
+_:df_18_243 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_245;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_246.
+_:df_18_245 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/Date>.
+_:df_18_246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_247;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_248.
+_:df_18_247 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/DateTime>.
+_:df_18_248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_249;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_250.
+_:df_18_249 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime>.
+_:df_18_250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_251;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_251 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date>.
+_:df_18_252 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_253 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_255;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_256.
+_:df_18_255 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/Date>.
+_:df_18_256 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_257;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_258.
+_:df_18_257 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/DateTime>.
+_:df_18_258 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_259;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_260.
+_:df_18_259 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime>.
+_:df_18_260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_261;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_261 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date>.
+_:df_18_262 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_263 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_265;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_266.
+_:df_18_265 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/Date>.
+_:df_18_266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_267;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_268.
+_:df_18_267 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/DateTime>.
+_:df_18_268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_269;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_270.
+_:df_18_269 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime>.
+_:df_18_270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_271;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_271 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date>.
+_:df_18_272 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_273 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcCreatedDatatypeProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_282;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/created>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_274;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:date, xsd:dateTime, schema:Date of schema:DateTime"@nl, "Use a value of type xsd:date, xsd:dateTime, schema:Date or schema:DateTime"@en.
+_:df_18_274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_275;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_276.
+_:df_18_275 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/Date>.
+_:df_18_276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_277;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_278.
+_:df_18_277 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/DateTime>.
+_:df_18_278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_279;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_280.
+_:df_18_279 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime>.
+_:df_18_280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_281;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_281 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date>.
+_:df_18_282 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcCreatedIso8601Property> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_283;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/created>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum, bijv. 2026-04-14 of 2026-04-14T10:30:00"@nl, "Use an ISO 8601 date, such as 2026-04-14 or 2026-04-14T10:30:00"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}.*)?$".
+_:df_18_283 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcIssuedDatatypeProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_292;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_284;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:date, xsd:dateTime, schema:Date of schema:DateTime"@nl, "Use a value of type xsd:date, xsd:dateTime, schema:Date or schema:DateTime"@en.
+_:df_18_284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_285;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_286.
+_:df_18_285 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/Date>.
+_:df_18_286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_287;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_288.
+_:df_18_287 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/DateTime>.
+_:df_18_288 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_289;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_290.
+_:df_18_289 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime>.
+_:df_18_290 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_291;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_291 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date>.
+_:df_18_292 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcIssuedIso8601Property> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_293;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum, bijv. 2026-04-14 of 2026-04-14T10:30:00"@nl, "Use an ISO 8601 date, such as 2026-04-14 or 2026-04-14T10:30:00"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}.*)?$".
+_:df_18_293 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcModifiedDatatypeProperty> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_302;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/modified>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_294;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:date, xsd:dateTime, schema:Date of schema:DateTime"@nl, "Use a value of type xsd:date, xsd:dateTime, schema:Date or schema:DateTime"@en.
+_:df_18_294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_295;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_296.
+_:df_18_295 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/Date>.
+_:df_18_296 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_297;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_298.
+_:df_18_297 <http://www.w3.org/ns/shacl#datatype> <https://schema.org/DateTime>.
+_:df_18_298 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_299;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_300.
+_:df_18_299 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#dateTime>.
+_:df_18_300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_301;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_301 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#date>.
+_:df_18_302 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<https://def.nde.nl/dataset#DcModifiedIso8601Property> a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <https://def.nde.nl#futureChange> _:df_18_303;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/modified>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum, bijv. 2026-04-14 of 2026-04-14T10:30:00"@nl, "Use an ISO 8601 date, such as 2026-04-14 or 2026-04-14T10:30:00"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}.*)?$".
+_:df_18_303 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<http://www.w3.org/ns/dcat#DatasetShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#AccrualPeriodicityProperty>, <https://def.nde.nl/dataset#AccessRightsProperty>, <https://def.nde.nl/dataset#DcTitleLangStringProperty>, <https://def.nde.nl/dataset#DcDescriptionLangStringProperty>, <https://def.nde.nl/dataset#DcLanguageAuthorityProperty>, <https://def.nde.nl/dataset#DcCreatedDatatypeProperty>, <https://def.nde.nl/dataset#DcCreatedIso8601Property>, <https://def.nde.nl/dataset#DcIssuedDatatypeProperty>, <https://def.nde.nl/dataset#DcIssuedIso8601Property>, <https://def.nde.nl/dataset#DcModifiedDatatypeProperty>, <https://def.nde.nl/dataset#DcModifiedIso8601Property>, _:df_18_304, _:df_18_309, _:df_18_310, _:df_18_312, _:df_18_317, _:df_18_318, _:df_18_319, _:df_18_320, _:df_18_321, _:df_18_322, _:df_18_324, _:df_18_325, _:df_18_333, _:df_18_334, _:df_18_335, _:df_18_342, _:df_18_343, _:df_18_345, _:df_18_353, _:df_18_355, _:df_18_356, _:df_18_357, _:df_18_358, _:df_18_359, _:df_18_360, _:df_18_361, _:df_18_362, _:df_18_363, _:df_18_365;
+    <http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/ns/dcat#Dataset>;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_304 <http://www.w3.org/ns/shacl#description> "De naam van de dataset."@nl, "A name given to the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#or> _:df_18_305.
+_:df_18_305 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_306;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_307.
+_:df_18_306 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_307 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_308;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_308 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_309 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_310 <http://www.w3.org/ns/shacl#description> "Een beschrijving van de inhoud van de dataset.\n        Deze is bij voorkeur minimaal drie zinnen en maximaal één alinea lang (2000 karakters).\n        De vindbaarheid van de dataset wordt onder andere bepaald door de kwaliteit van de beschrijving.\n        Denk hierbij aan verschillende gebruikers, vakgenoten maar ook anderen,\n        waarvoor de tekst begrijpelijk moet zijn."@nl, "A description of the contents of the dataset.\n        Preferably at least three sentences and at most one paragraph (2,000 characters).\n        The discoverability of the dataset depends in part on the quality of the description.\n        Consider different audiences – both domain experts and others –\n        for whom the text should be understandable."@en;
+    <https://def.nde.nl#futureChange> _:df_18_311;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een beschrijving toe"@nl, "Add a description"@en.
+_:df_18_311 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_312 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_313;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_314;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_315.
+_:df_18_314 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_315 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_316;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_316 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_317 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_318 <http://www.w3.org/ns/shacl#description> "De datum waarop de dataset is aangemaakt."@nl, "The date on which the dataset was created."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/created>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de aanmaakdatum in"@nl, "Enter the creation date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_319 <http://www.w3.org/ns/shacl#description> "De datum van formele uitgifte (bijvoorbeeld publicatie) van de dataset."@nl, "The date of formal issuance (such as publication) of the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de uitgiftedatum in"@nl, "Enter the issue date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_320 <http://www.w3.org/ns/shacl#description> "De meest recente datum waarop de dataset is gewijzigd of aangepast."@nl, "The most recent date on which the dataset was changed or modified."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/modified>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de wijzigingsdatum in"@nl, "Enter the modification date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_321 <http://www.w3.org/ns/shacl#description> "Het geografische gebied waarop de gegevens in de dataset betrekking hebben. Gebruik een URI uit een gecontroleerd vocabulaire zoals <a href=\"https://www.geonames.org/\">GeoNames</a>. Zoek plaats-URI’s via het <a href=\"https://termennetwerk.netwerkdigitaalerfgoed.nl/\">Termennetwerk</a>."@nl, "The geographical area to which the data in the dataset pertains. Use a URI from a controlled vocabulary such as <a href=\"https://www.geonames.org/\">GeoNames</a>. Find place URIs via the <a href=\"https://termennetwerk.netwerkdigitaalerfgoed.nl/en\">Network of Terms</a>."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/spatial>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een gebiedsaanduiding toe (bijv. een URL uit GeoNames)"@nl, "Add spatial coverage (such as a GeoNames URL)"@en.
+_:df_18_322 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_323;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/spatial>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een URI voor het gebied (bijv. https://sws.geonames.org/2750405/) in plaats van alleen een plaatsnaam"@nl, "Use a valid URI (such as via GeoNames: https://sws.geonames.org/2750405/) instead of just a place name"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_323 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_324 <http://www.w3.org/ns/shacl#description> "De tijdsperiode waar de dataset betrekking op heeft. De waarde moet een ISO 8601-datum of -tijdsinterval zijn (bijv. ‘2011’, ‘2011/2012’, ‘1889-06/07’ voor een verkorte notatie, ‘-0431/-0404’ of ‘-13000/-10000’ voor v.Chr.-dateringen, of ‘1440/..’ voor een open einde), of een HTTP(S)-URI."@nl, "The time period to which the dataset pertains. The value must be an ISO 8601 date or time interval (such as ‘2011’, ‘2011/2012’, ‘1889-06/07’ for shortened notation, ‘-0431/-0404’ or ‘-13000/-10000’ for BCE dates, or ‘1440/..’ for an open-ended range), or an HTTP(S) URI."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/temporal>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een tijdsaanduiding toe"@nl, "Add temporal coverage"@en.
+_:df_18_325 <https://def.nde.nl#futureChange> _:df_18_332;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/temporal>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_326;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een ISO 8601-datum of -tijdsinterval (bijv. ‘2011/2012’, ‘-0431/-0404’ voor v.Chr., of ‘1440/..’) of een web-URI"@nl, "Use an ISO 8601 date or time interval (such as ‘2011/2012’, ‘-0431/-0404’ for BCE, or ‘1440/..’) or a web URI"@en.
+_:df_18_326 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_327;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_328.
+_:df_18_327 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_328 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_329;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_330.
+_:df_18_329 <http://www.w3.org/ns/shacl#pattern> "^(-?\\d{4,}(-\\d{2}(-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?)?)?)?|\\.\\.)(/(-?\\d{4,}(-\\d{2}(-\\d{2}(T\\d{2}:\\d{2}(:\\d{2})?)?)?)?|\\d{2}(-\\d{2})?|\\.\\.))?$".
+_:df_18_330 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_331;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_331 <http://www.w3.org/ns/shacl#class> <http://purl.org/dc/terms/PeriodOfTime>.
+_:df_18_332 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_333 <http://www.w3.org/ns/shacl#description> "De natuurlijke taal van de tekstuele waarden in de dataset. Gebruik een waarde uit de <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language\">EU Vocabularies Languages Named Authority List</a>."@nl, "The natural language of the textual values in the dataset. Use a value from the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language\">EU Vocabularies Languages Named Authority List</a>."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de taal of talen in"@nl, "Enter the language or languages of the dataset"@en.
+_:df_18_334 <http://www.w3.org/ns/shacl#description> "De organisatie of persoon die verantwoordelijk is voor de publicatie van de dataset."@nl, "An entity (organisation or person) responsible for making the Dataset available."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Voeg een uitgever toe"@nl, "Add a publisher"@en.
+_:df_18_335 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_336;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een uitgever van type foaf:Organization, foaf:Person of foaf:Agent"@nl, "Use a publisher of type foaf:Organization, foaf:Person or foaf:Agent"@en.
+_:df_18_336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_337;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_338.
+_:df_18_337 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Organization>.
+_:df_18_338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_339;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_340.
+_:df_18_339 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Person>.
+_:df_18_340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_341;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_341 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent>.
+_:df_18_342 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één uitgever"@nl, "Use at most one publisher"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_343 <http://www.w3.org/ns/shacl#description> "De organisatie of persoon die verantwoordelijk is voor het creëren van de beschreven dataset."@nl, "An entity (organisation or person) responsible for producing the dataset."@en;
+    <https://def.nde.nl#futureChange> _:df_18_344;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een maker toe"@nl, "Add a creator"@en.
+_:df_18_344 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_345 <https://def.nde.nl#futureChange> _:df_18_352;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/creator>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_346;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een maker van type foaf:Organization, foaf:Person of foaf:Agent"@nl, "Use a creator of type foaf:Organization, foaf:Person or foaf:Agent"@en.
+_:df_18_346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_347;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_348.
+_:df_18_347 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Organization>.
+_:df_18_348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_349;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_350.
+_:df_18_349 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Person>.
+_:df_18_350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_351;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_351 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent>.
+_:df_18_352 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_353 <http://www.w3.org/ns/shacl#description> "Contactinformatie waar eindgebruikers contact kunnen opnemen met vragen over de dataset.\n        Dit bevat het e-mailadres of een link (URL) naar het contactformulier van de verantwoordelijke organisatie.\n        Het e-mailadres is een functioneel e-mailadres van de organisatie of organisatieonderdeel."@nl, "Contact information where end users can get in touch with questions about the dataset.\n        This contains the e-mail address or a link (URL) to the contact form of the responsible organization.\n        The e-mail address should be a functional e-mail address of the organization or department."@en;
+    <https://def.nde.nl#futureChange> _:df_18_354;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#contactPoint>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een contactpunt toe met naam en e-mailadres. Gebruik bij voorkeur de gegevens van de afdeling die de dataset of catalogus beheert"@nl, "Add a contact point with a name and email address, preferably of the department that manages the dataset or catalogue"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_354 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_355 <http://www.w3.org/ns/shacl#description> "De categorie van de dataset. Gebruik minimaal een waarde uit het Europese Dataset Theme Vocabulary.\n        Aanbevolen wordt om daarnaast waarden op te nemen uit domeinspecifieke vocabulaires.\n        Standaard wordt ‘Education, culture and sport’ (data-theme/EDUC) toegevoegd."@nl, "The category of the dataset. Use at least one value from the European Dataset Theme Vocabulary.\n        It is recommended to also include values from domain-specific vocabularies.\n        The default theme ‘Education, culture and sport’ (data-theme/EDUC) is auto-assigned."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#theme>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_356 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#Distribution>;
+    <http://www.w3.org/ns/shacl#description> "Een beschikbare representatie van de dataset."@nl, "An available representation of the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#distribution>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg minimaal één distributie toe aan de datasetbeschrijving"@nl, "Add at least one distribution to the dataset description"@en.
+_:df_18_357 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een webpagina die toegang biedt tot de dataset, zijn distributies of aanvullende informatie. Niet nodig als de URI van de dataset zelf al naar een HTML-pagina leidt. De menselijk leesbare beschrijving MOET consistent zijn met en minstens alle details (zoals distributies) uit de RDF-datasetbeschrijving bevatten."@nl, "A web page that provides access to the Dataset, its Distributions and/or additional information. Not needed when the dataset URI itself resolves to an HTML page. The human-readable description MUST be consistent with and include at least all details (such as distributions) from the RDF dataset description."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#landingPage>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_358 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#landingPage>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URL die begint met https://"@nl, "Use a web URL starting with https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_359 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "De URI van een dataset waarop deze dataset is gebaseerd."@nl, "The URI of a dataset this dataset is based on."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/source>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_360 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Versieaanduiding van de dataset, bijvoorbeeld een semantisch versienummer of een datum."@nl, "Version identifier of the dataset, such as a semantic version number or a date."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#version>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één versie"@nl, "Use at most one version"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_361 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Verwijst naar een dataset die onderdeel is van deze dataset en ook als afzonderlijke dataset beschikbaar is."@nl, "Indicates a dataset that is part of this dataset and also available as a separate dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/hasPart>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_362 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "Een citaat of verwijzing voor de dataset."@nl, "A citation or reference for the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/isReferencedBy>;
+    <http://www.w3.org/ns/shacl#minCount> 0.
+_:df_18_363 a <http://www.w3.org/ns/shacl#PropertyShape>;
+    <http://www.w3.org/ns/shacl#description> "De HTTP IRI(s) van de datacatalogus of -catalogi waartoe de dataset behoort."@nl, "The HTTP IRI(s) of the data catalog(s) that the dataset belongs to."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_364;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/isPartOf>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_364 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_365 <https://def.nde.nl#futureChange> _:df_18_366;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/isPartOf>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_366 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<http://www.w3.org/ns/dcat#DistributionShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_367, _:df_18_373;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#DcLanguageAuthorityProperty>, <https://def.nde.nl/dataset#DcIssuedDatatypeProperty>, <https://def.nde.nl/dataset#DcIssuedIso8601Property>, <https://def.nde.nl/dataset#DcModifiedDatatypeProperty>, <https://def.nde.nl/dataset#DcModifiedIso8601Property>, _:df_18_382, _:df_18_385, _:df_18_387, _:df_18_390, _:df_18_393, _:df_18_396, _:df_18_397, _:df_18_398, _:df_18_399, _:df_18_400, _:df_18_402, _:df_18_404, _:df_18_405, _:df_18_410, _:df_18_412, _:df_18_413, _:df_18_414, _:df_18_415, _:df_18_416, _:df_18_417, _:df_18_419, _:df_18_421, _:df_18_422, _:df_18_423, _:df_18_424, _:df_18_425, _:df_18_427, _:df_18_429, _:df_18_430, _:df_18_431, _:df_18_433, _:df_18_435, _:df_18_436, _:df_18_437, _:df_18_438;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <http://www.w3.org/ns/dcat#distribution>.
+_:df_18_367 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_368;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_370.
+_:df_18_368 <http://www.w3.org/ns/shacl#property> _:df_18_369.
+_:df_18_369 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_371;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_371 <http://www.w3.org/ns/shacl#property> _:df_18_372.
+_:df_18_372 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_373 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_374;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_376.
+_:df_18_374 <http://www.w3.org/ns/shacl#property> _:df_18_375.
+_:df_18_375 <http://www.w3.org/ns/shacl#description> "Het mediatype van de distributie conform de IANA-indeling."@nl, "The media type of the distribution according to the IANA classification."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType>;
+    <http://www.w3.org/ns/shacl#minCount> 1.
+_:df_18_376 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_377;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_379.
+_:df_18_377 <http://www.w3.org/ns/shacl#property> _:df_18_378.
+_:df_18_378 <http://www.w3.org/ns/shacl#description> "Het formaat van de distributie."@nl, "The format of the distribution."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/format>;
+    <http://www.w3.org/ns/shacl#minCount> 1.
+_:df_18_379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_380;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_380 <http://www.w3.org/ns/shacl#property> _:df_18_381.
+_:df_18_381 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/conformsTo>;
+    <http://www.w3.org/ns/shacl#minCount> 1.
+_:df_18_382 <https://def.nde.nl#futureChange> _:df_18_384;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Verwijder het SPARQL MIME-type uit dcat:mediaType; SPARQL-endpoints worden gedeclareerd via dct:conformsTo"@nl, "Remove the SPARQL MIME type from dcat:mediaType; SPARQL endpoints are declared via dct:conformsTo"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_383.
+_:df_18_383 <http://www.w3.org/ns/shacl#pattern> "application/sparql-".
+_:df_18_384 <http://www.w3.org/2000/01/rdf-schema#label> "geen SPARQL-mediatype"@nl, "no SPARQL media type"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_385 <https://def.nde.nl#futureChange> _:df_18_386;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één mediatype per distributie"@nl, "Use at most one media type per distribution"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_386 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_387 <https://def.nde.nl#futureChange> _:df_18_389;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een geregistreerd IANA-mediatype. Mediatypes met het voorvoegsel x- (zoals application/x-zip-compressed) zijn niet geregistreerd bij IANA; gebruik het geregistreerde type, bijvoorbeeld application/zip"@nl, "Use a registered IANA media type. Media types with the x- prefix (such as application/x-zip-compressed) are not registered with IANA; use the registered type, such as application/zip"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_388.
+_:df_18_388 <http://www.w3.org/ns/shacl#pattern> "^(https?://www\\.iana\\.org/assignments/media-types/)?[a-zA-Z]+/x-".
+_:df_18_389 <http://www.w3.org/2000/01/rdf-schema#label> "geen x-mediatype"@nl, "no x- media type"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_390 <https://def.nde.nl#futureChange> _:df_18_392;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Geef het compressietype (zoals application/zip of application/gzip) op in dcat:compressFormat, en het mediatype van de ingepakte bestanden in dcat:mediaType"@nl, "Give the compression type (such as application/zip or application/gzip) in dcat:compressFormat, and the media type of the packed file(s) in dcat:mediaType"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_391.
+_:df_18_391 <http://www.w3.org/ns/shacl#pattern> "^(https?://www\\.iana\\.org/assignments/media-types/)?application/(zip|gzip|x-gzip|x-zip-compressed)$";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_392 <http://www.w3.org/2000/01/rdf-schema#label> "geen compressietype (gebruik dcat:compressFormat)"@nl, "no compression type (use dcat:compressFormat)"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_393 <https://def.nde.nl#futureChange> _:df_18_395;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#mediaType>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Verplaats het compressieachtervoegsel naar dcat:compressFormat: gebruik bijvoorbeeld dcat:mediaType text/turtle met dcat:compressFormat application/gzip in plaats van text/turtle+gzip"@nl, "Move the compression suffix to dcat:compressFormat: for example, use dcat:mediaType text/turtle with dcat:compressFormat application/gzip rather than text/turtle+gzip"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_394.
+_:df_18_394 <http://www.w3.org/ns/shacl#pattern> "\\+(zip|gzip)$";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_395 <http://www.w3.org/2000/01/rdf-schema#label> "geen compressieachtervoegsel (gebruik dcat:compressFormat)"@nl, "no compression suffix (use dcat:compressFormat)"@en;
+    <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_396 <http://www.w3.org/ns/shacl#description> "De URL die toegang verschaft tot een distributie van de dataset."@nl, "The URL that provides access to a distribution of the dataset."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL>.
+_:df_18_397 <http://www.w3.org/ns/shacl#description> "De URL van het downloadbare bestand in een bepaald formaat."@nl, "The URL of the downloadable file in a specific format."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL>.
+_:df_18_398 <http://www.w3.org/ns/shacl#description> "Het compressieformaat van de distributie, als mediatype uit de IANA media types-lijst (bijv. `application/gzip`). Geef compressie in DCAT hier aan, niet in `dcat:mediaType`: een kaal compressietype (bijv. `application/zip`) of een achtervoegsel (bijv. `text/turtle+gzip`) daar geeft een waarschuwing. Zijn beide opgegeven, dan heeft `dcat:compressFormat` voorrang. Een waarde die geen mediatype is (bijv. `gzip` in plaats van `application/gzip`) wordt niet opgenomen."@nl, "The compression format of the distribution, as a media type from the IANA media types list (such as `application/gzip`). In DCAT, declare compression here, not in `dcat:mediaType`: a bare compression type (such as `application/zip`) or a suffix (such as `text/turtle+gzip`) there gives a warning. If both are given, `dcat:compressFormat` takes precedence. A value that is not a media type (such as `gzip` rather than `application/gzip`) is not recorded."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#compressFormat>.
+_:df_18_399 <http://www.w3.org/ns/shacl#description> "Standaarden of specificaties waaraan de distributie voldoet. Voor SPARQL-endpoints moet dit de SPARQL protocol-URI bevatten."@nl, "Standards or specifications the distribution conforms to. For SPARQL endpoints, this must include the SPARQL protocol URI."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/conformsTo>.
+_:df_18_400 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_401;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/conformsTo>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_401 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_402 <https://def.nde.nl#futureChange> _:df_18_403;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/conformsTo>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Use a web URI starting with http:// or https://"@en, "Gebruik een web URI die begint met http:// of https://"@nl;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+_:df_18_403 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_404 <http://www.w3.org/ns/shacl#description> "De naam van de distributie."@nl, "The name of the distribution."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title>.
+_:df_18_405 <http://www.w3.org/ns/shacl#description> "Beschrijving van de distributie"@nl, "Distribution description"@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_406;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string of rdf:langString"@nl, "Use a value of type xsd:string or rdf:langString"@en.
+_:df_18_406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_407;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_408.
+_:df_18_407 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_408 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_409;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_409 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_410 <https://def.nde.nl#futureChange> _:df_18_411;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_411 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_412 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een beschrijving toe"@nl, "Add a description"@en.
+_:df_18_413 <http://www.w3.org/ns/shacl#description> "De datum van formele uitgifte (bijvoorbeeld publicatie) van de distributie."@nl, "The date of formal issuance (such as publication) of the distribution."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/issued>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één uitgiftedatum"@nl, "Use at most one issue date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_414 <http://www.w3.org/ns/shacl#description> "De meest recente datum waarop de distributie is gewijzigd of aangepast."@nl, "The most recent date on which the distribution was changed or modified."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/modified>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één wijzigingsdatum"@nl, "Use at most one modification date"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_415 <http://www.w3.org/ns/shacl#description> "Bestandsgrootte van de distributie in bytes."@nl, "Distribution file size in bytes."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#byteSize>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één bestandsgrootte"@nl, "Use at most one file size"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_416 <http://www.w3.org/ns/shacl#description> "Een documentatiepagina die deze distributie beschrijft of ontsluit, zoals een SPARQL-UI of een downloadlandingspagina.\n            `dcat:accessURL` en `dcat:downloadURL` wijzen naar de distributie zelf (het API-endpoint of het databestand)."@nl, "A documentation page that describes or provides access to this distribution, such as a SPARQL UI or a download landing page.\n            `dcat:accessURL` and `dcat:downloadURL` point to the distribution itself (the API endpoint or the data file)."@en;
+    <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/page>.
+_:df_18_417 <http://www.w3.org/ns/shacl#description> "De licentie waaronder de distributie beschikbaar is gesteld."@nl, "The license under which the distribution is made available."@en;
+    <https://def.nde.nl#futureChange> _:df_18_418;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg één licentie toe"@nl, "Add exactly one license"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_418 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_419 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_420;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_420 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_421 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Eindig de Creative Commons-licentie-URL met een slash"@nl, "End the Creative Commons license URL with a slash"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseCreativeCommonsTrailingSlashShape>.
+_:df_18_422 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de Creative Commons-URL zelf, geen opendefinition.org-alias"@nl, "Use the Creative Commons URL directly, not an opendefinition.org alias"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseNotOpenDefinitionShape>.
+_:df_18_423 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/license>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik de officiële Open Data Commons-licentie-URL met versienummer, bijv. http://opendatacommons.org/licenses/odbl/1.0/"@nl, "Use an official Open Data Commons licence URL with a version number, such as http://opendatacommons.org/licenses/odbl/1.0/"@en;
+    <http://www.w3.org/ns/shacl#node> <https://def.nde.nl/dataset#LicenseOpenDataCommonsShape>.
+_:df_18_424 <http://www.w3.org/ns/shacl#description> "De natuurlijke taal van de tekstuele waarden in de distributie. Gebruik een waarde uit de <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language\">EU Vocabularies Languages Named Authority List</a>."@nl, "The natural language of the textual values in the distribution. Use a value from the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language\">EU Vocabularies Languages Named Authority List</a>."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/language>;
+    <http://www.w3.org/ns/shacl#minCount> 0;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Vul de taal of talen in waarin de distributie beschikbaar is"@nl, "Enter the language or languages of the distribution"@en.
+_:df_18_425 <https://def.nde.nl#futureChange> _:df_18_426;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URL die begint met https://"@nl, "Use a web URL starting with https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_426 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_427 <https://def.nde.nl#futureChange> _:df_18_428;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URL die begint met https://"@nl, "Use a web URL starting with https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_428 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_429 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/page>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_430 <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/page>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URL die begint met https://"@nl, "Use a web URL starting with https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https://".
+_:df_18_431 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_432;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_432 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_433 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_434;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_434 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_435 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "De accessURL is niet bereikbaar; de dataset kan niet worden geraadpleegd."@nl, "The accessURL is not reachable; the dataset cannot be accessed."@en;
+    <https://def.nde.nl/probe#probeReachable> true.
+_:df_18_436 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "De downloadURL is niet bereikbaar; het bestand kan niet worden opgehaald."@nl, "The downloadURL is not reachable; the file cannot be retrieved."@en;
+    <https://def.nde.nl/probe#probeReachable> true.
+_:df_18_437 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#accessURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Het Content-Type van de accessURL komt niet overeen met de opgegeven dcat:mediaType."@nl, "The Content-Type of the accessURL does not match the declared dcat:mediaType."@en;
+    <https://def.nde.nl/probe#probeFormatMatch> true.
+_:df_18_438 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#downloadURL>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Het Content-Type van de downloadURL komt niet overeen met de opgegeven dcat:mediaType."@nl, "The Content-Type of the downloadURL does not match the declared dcat:mediaType."@en;
+    <https://def.nde.nl/probe#probeFormatMatch> true.
+<http://www.w3.org/ns/dcat#CatalogShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#targetSubjectsOf> <http://www.w3.org/ns/dcat#dataset>;
+    <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#Catalog>;
+    <https://def.nde.nl#futureChange> _:df_18_439;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#DcTitleLangStringProperty>, <https://def.nde.nl/dataset#DcDescriptionLangStringProperty>, _:df_18_440, _:df_18_445, _:df_18_446, _:df_18_448, _:df_18_453, _:df_18_454, _:df_18_456, _:df_18_464, _:df_18_466, _:df_18_468, _:df_18_469.
+_:df_18_439 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>.
+_:df_18_440 <http://www.w3.org/ns/shacl#description> "De naam van de catalogus."@nl, "The name of the catalog."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#or> _:df_18_441;
+    <http://www.w3.org/ns/shacl#message> "Voeg een titel toe"@nl, "Add a title"@en.
+_:df_18_441 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_442;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_443.
+_:df_18_442 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_443 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_444;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_444 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_445 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/title>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_446 <http://www.w3.org/ns/shacl#description> "Een beschrijving van de catalogus."@nl, "A description of the catalog."@en;
+    <https://def.nde.nl#futureChange> _:df_18_447;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een beschrijving toe"@nl, "Add a description"@en.
+_:df_18_447 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_448 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_449;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_450;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_451.
+_:df_18_450 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_451 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_452;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_452 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_453 <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/description>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_454 <http://www.w3.org/ns/shacl#description> "De organisatie die verantwoordelijk is voor de publicatie van de catalogus."@nl, "The organization responsible for publishing the catalog."@en;
+    <https://def.nde.nl#futureChange> _:df_18_455;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een uitgever toe"@nl, "Add a publisher"@en.
+_:df_18_455 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_456 <https://def.nde.nl#futureChange> _:df_18_463;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_457;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een uitgever van type foaf:Organization, foaf:Person of foaf:Agent"@nl, "Use a publisher of type foaf:Organization, foaf:Person or foaf:Agent"@en.
+_:df_18_457 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_458;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_459.
+_:df_18_458 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Organization>.
+_:df_18_459 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_460;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_461.
+_:df_18_460 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Person>.
+_:df_18_461 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_462;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_462 <http://www.w3.org/ns/shacl#class> <http://xmlns.com/foaf/0.1/Agent>.
+_:df_18_463 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_464 <https://def.nde.nl#futureChange> _:df_18_465;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/publisher>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik maximaal één uitgever"@nl, "Use at most one publisher"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_465 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_466 <http://www.w3.org/ns/shacl#description> "Contactinformatie waar eindgebruikers contact kunnen opnemen met vragen over de catalogus.\n        Dit bevat het e-mailadres of een link (URL) naar het contactformulier van de verantwoordelijke organisatie.\n        Het e-mailadres is een functioneel e-mailadres van de organisatie of organisatieonderdeel."@nl, "Contact information where end users can get in touch with questions about the catalog.\n        This contains the e-mail address or a link (URL) to the contact form of the responsible organization.\n        The e-mail address should be a functional e-mail address of the organization or department."@en;
+    <https://def.nde.nl#futureChange> _:df_18_467;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#contactPoint>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een contactpunt toe met naam en e-mailadres. Gebruik bij voorkeur de gegevens van de afdeling die de dataset of catalogus beheert"@nl, "Add a contact point with a name and email address, preferably of the department that manages the dataset or catalogue"@en;
+    <http://www.w3.org/ns/shacl#maxCount> 1.
+_:df_18_467 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_468 <http://www.w3.org/ns/shacl#description> "De datasets in de catalogus."@nl, "The datasets in the catalog."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#dataset>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Voeg minimaal één datasetbeschrijving toe aan de datacatalogus. Een datacatalogus bestaat namelijk uit datasetbeschrijvingen"@nl, "Add at least one dataset description to the data catalog. A data catalog consists of dataset descriptions"@en.
+_:df_18_469 <http://www.w3.org/ns/shacl#class> <http://www.w3.org/ns/dcat#Dataset>;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/dcat#dataset>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een dataset van type dcat:Dataset"@nl, "Use a dataset of type dcat:Dataset"@en.
+<http://www.w3.org/ns/dcat#CatalogIriShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#targetSubjectsOf> <http://www.w3.org/ns/dcat#dataset>;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_470;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Geef de datacatalogus een URI"@nl, "Give the data catalog a URI"@en.
+_:df_18_470 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<http://www.w3.org/ns/dcat#ContactPointShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#property> _:df_18_471, _:df_18_472, _:df_18_477, _:df_18_478, _:df_18_480, _:df_18_481, _:df_18_483, _:df_18_486;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <http://www.w3.org/ns/dcat#contactPoint>.
+_:df_18_471 <http://www.w3.org/ns/shacl#description> "Naam van het contactpunt, bij voorkeur een afdeling (“Afdeling datasets”) in plaats van een individuele medewerker. Geef de waarde een taaltag, zodat een meertalige afdelingsnaam of een niet-Latijnse persoonsnaam in de juiste taal getoond kan worden."@nl, "Name of the contact point, preferably a department (“Datasets department”) rather than an individual employee. Tag the value with a language so that a multilingual department name or a non-Latin personal name can be shown in the appropriate language."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#fn>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Vul een naam in voor het contactpunt"@nl, "Enter a name for the contact point"@en.
+_:df_18_472 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#fn>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_473;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string of rdf:langString"@nl, "Use a value of type xsd:string or rdf:langString"@en.
+_:df_18_473 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_474;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_475.
+_:df_18_474 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_476;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_476 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_477 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#fn>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_478 <https://def.nde.nl#futureChange> _:df_18_479;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#fn>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_479 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_480 <http://www.w3.org/ns/shacl#description> "Het e-mailadres van het contactpunt als mailto:-URL, bij voorkeur een functioneel adres van de organisatie of afdeling."@nl, "The email address of the contact point as a mailto: URL, preferably a functional address of the organization or department."@en;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasEmail>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#message> "Vul een e-mailadres in voor het contactpunt"@nl, "Enter an email address for the contact point"@en.
+_:df_18_481 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <https://def.nde.nl#futureChange> _:df_18_482;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasEmail>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Geef het e-mailadres van het contactpunt op als mailto:-URL"@nl, "Give the email address of the contact point as a mailto: URL"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^mailto:".
+_:df_18_482 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_483 <https://def.nde.nl#futureChange> _:df_18_485;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasEmail>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Vervang het voorbeeldadres van het contactpunt door een echt e-mailadres"@nl, "Replace the placeholder email address of the contact point with a real one"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_484.
+_:df_18_484 <http://www.w3.org/ns/shacl#pattern> "@([^@/?#,\\s]+\\.)?(example(\\.(com|net|org))?|test|invalid|localhost)([?#,\\s]|$)";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_485 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_486 <https://def.nde.nl#futureChange> _:df_18_488;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2006/vcard/ns#hasEmail>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Verwijder de dubbele mailto: uit het e-mailadres van het contactpunt"@nl, "Remove the duplicate mailto: from the email address of the contact point"@en;
+    <http://www.w3.org/ns/shacl#not> _:df_18_487.
+_:df_18_487 <http://www.w3.org/ns/shacl#pattern> "^mailto:(\\s|%20)*mailto:";
+    <http://www.w3.org/ns/shacl#flags> "i".
+_:df_18_488 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+<http://www.w3.org/ns/dcat#AgentShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#property> <https://def.nde.nl/dataset#FoafNameLangStringProperty>, _:df_18_489, _:df_18_494, _:df_18_495, _:df_18_500, _:df_18_501, _:df_18_503, _:df_18_504, _:df_18_505;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://";
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.org/dc/terms/publisher>, <http://purl.org/dc/terms/creator>.
+_:df_18_489 <http://www.w3.org/ns/shacl#description> "De naam van de uitgever of maker."@nl, "The name of the publisher or creator."@en;
+    <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/name>;
+    <http://www.w3.org/ns/shacl#minCount> 1;
+    <http://www.w3.org/ns/shacl#or> _:df_18_490;
+    <http://www.w3.org/ns/shacl#message> "Vul een naam in voor de uitgever of maker"@nl, "Enter a name for the publisher or creator"@en.
+_:df_18_490 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_491;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_492.
+_:df_18_491 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_492 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_493;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_493 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_494 <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/name>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_495 <http://www.w3.org/ns/shacl#description> "Alternatieve namen, zoals een afkorting waaronder de organisatie bekendstaat."@nl, "Alternative names such as an abbreviation that the organization is known under."@en;
+    <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/nick>;
+    <http://www.w3.org/ns/shacl#or> _:df_18_496;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string of rdf:langString"@nl, "Use a value of type xsd:string or rdf:langString"@en.
+_:df_18_496 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_497;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:df_18_498.
+_:df_18_497 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>.
+_:df_18_498 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:df_18_499;
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>.
+_:df_18_499 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.
+_:df_18_500 <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/nick>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik per taal maximaal één waarde"@nl, "Use at most one value per language"@en;
+    <http://www.w3.org/ns/shacl#uniqueLang> true.
+_:df_18_501 <https://def.nde.nl#futureChange> _:df_18_502;
+    <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/nick>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type rdf:langString en geef de taal aan (bijv. nl of en)"@nl, "Use a value of type rdf:langString and specify the language (such as nl or en)"@en.
+_:df_18_502 <https://def.nde.nl#version> "2.0";
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Violation>.
+_:df_18_503 <http://www.w3.org/ns/shacl#description> "Identificatie(s) van de organisatie, minimaal de <a href=\"https://www.nationaalarchief.nl/archiveren/kennisbank/isil-codes\">ISIL-code</a>."@nl, "Identifier(s) of the organization, at least its <a href=\"https://www.nationaalarchief.nl/archiveren/kennisbank/isil-codes\">ISIL code</a>."@en;
+    <http://www.w3.org/ns/shacl#path> <http://purl.org/dc/terms/identifier>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Warning>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type xsd:string"@nl, "Use a value of type xsd:string"@en.
+_:df_18_504 <http://www.w3.org/ns/shacl#description> "Verwijzingen naar de organisatie in andere databases."@nl, "Links to the organization in other databases."@en;
+    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>;
+    <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2002/07/owl#sameAs>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een waarde van type URI (RDF-resource), geen tekst"@nl, "Use a value of type URI (RDF resource), not text"@en.
+_:df_18_505 <http://www.w3.org/ns/shacl#path> <http://www.w3.org/2002/07/owl#sameAs>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Gebruik een web-URI die begint met http:// of https://"@nl, "Use a web URI starting with http:// or https://"@en;
+    <http://www.w3.org/ns/shacl#pattern> "^https?://".
+<http://www.w3.org/ns/dcat#OrganizationIdentifierRequiredShape> a <http://www.w3.org/ns/shacl#NodeShape>;
+    <http://www.w3.org/ns/shacl#severity> <http://www.w3.org/ns/shacl#Info>;
+    <http://www.w3.org/ns/shacl#message> "Voeg een identificatie toe voor de organisatie, zoals een KvK-nummer of ISIL"@nl, "Add an identifier for the organisation, such as a Chamber of Commerce number or ISIL"@en;
+    <http://www.w3.org/ns/shacl#targetObjectsOf> <http://purl.org/dc/terms/publisher>, <http://purl.org/dc/terms/creator>;
+    <http://www.w3.org/ns/shacl#sparql> _:df_18_506.
+_:df_18_506 <http://www.w3.org/ns/shacl#select> "\n            PREFIX dct: <http://purl.org/dc/terms/>\n            PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n            SELECT $this ?path WHERE {\n                $this a foaf:Organization .\n                FILTER NOT EXISTS { $this dct:identifier ?id }\n                BIND(dct:identifier AS ?path)\n            }\n        ".
+<https://def.nde.nl/probe#DistributionReachableConstraintComponent> a <http://www.w3.org/ns/shacl#ConstraintComponent>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Distribution reachability check"@en, "Distributie-bereikbaarheidscontrole"@nl;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "\n        Asserts that the IRI value at the annotated property path responds successfully to\n        an HTTP probe. Activated on a property shape by setting nde-probe:probeReachable true.\n    "@en;
+    <http://www.w3.org/ns/shacl#parameter> _:df_18_507.
+_:df_18_507 <http://www.w3.org/ns/shacl#path> <https://def.nde.nl/probe#probeReachable>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://def.nde.nl/probe#DistributionFormatMatchConstraintComponent> a <http://www.w3.org/ns/shacl#ConstraintComponent>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Distribution format match check"@en, "Distributie-formaatcontrole"@nl;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "\n        Asserts that the HTTP Content-Type returned by the probed URL is compatible with\n        the declared dcat:mediaType (or schema:encodingFormat). Activated on a property\n        shape by setting nde-probe:probeFormatMatch true.\n    "@en;
+    <http://www.w3.org/ns/shacl#parameter> _:df_18_508.
+_:df_18_508 <http://www.w3.org/ns/shacl#path> <https://def.nde.nl/probe#probeFormatMatch>;
+    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean>.
+<https://def.nde.nl/probe#ProbeOutcome> a <http://www.w3.org/2000/01/rdf-schema#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Distribution probe outcome"@en, "Uitkomst distributiecontrole"@nl.
+<https://def.nde.nl/probe#NetworkError> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Network error before any HTTP response"@en, "Netwerkfout voor enige HTTP-respons"@nl.
+<https://def.nde.nl/probe#NotFound> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "HTTP 404 Not Found"@en, "HTTP 404 niet gevonden"@nl.
+<https://def.nde.nl/probe#ServerError> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "HTTP 5xx server error"@en, "HTTP 5xx-serverfout"@nl.
+<https://def.nde.nl/probe#AuthRequired> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Authentication required (HTTP 401 or 403)"@en, "Authenticatie vereist (HTTP 401 of 403)"@nl.
+<https://def.nde.nl/probe#RateLimited> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Rate limited (HTTP 429)"@en, "Rate-limiet (HTTP 429)"@nl.
+<https://def.nde.nl/probe#ContentTypeMismatch> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Response Content-Type does not match the declared media type"@en, "Content-Type van respons komt niet overeen met het opgegeven mediatype"@nl.
+<https://def.nde.nl/probe#ContentTypeMissing> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Response has no Content-Type header"@en, "Respons heeft geen Content-Type-header"@nl.
+<https://def.nde.nl/probe#EmptyBody> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Response body is empty"@en, "Responsbody is leeg"@nl.
+<https://def.nde.nl/probe#SparqlProbeFailed> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL probe query failed"@en, "SPARQL-probequery mislukt"@nl.
+<https://def.nde.nl/probe#RdfParseFailed> a <https://def.nde.nl/probe#ProbeOutcome>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "RDF data dump could not be parsed"@en, "RDF-databundel kon niet worden geparseerd"@nl.

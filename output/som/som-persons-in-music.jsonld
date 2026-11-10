@@ -1,0 +1,188 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://data.podiumkunst.net/dataset/som-persons-in-music",
+  "identifier": "https://data.podiumkunst.net/dataset/som-persons-in-music",
+  "name": [
+    {
+      "@language": "en",
+      "@value": "People in music"
+    },
+    {
+      "@language": "nl",
+      "@value": "Muziekpersonen"
+    }
+  ],
+  "description": [
+    {
+      "@language": "en",
+      "@value": "Linked Open Data Terminology resource for the unambiguous identification of persons in the music domain. Contains richly metadated personal entities that have a relationship with the sheet music collection of the Stichting Omroep Muziek. This includes composers, arrangers, lyricists, songwriters and performing artists."
+    },
+    {
+      "@language": "nl",
+      "@value": "Linked Open Data Terminologiebron ten behoeve van eenduidige identificatie van en informatievoorziening over muziekpersonen. Bevat rijk gemetadateerde persoonsentiteiten die een relatie hebben met de bladmuziekcollectie van de Stichting Omroep Muziek. Denk hierbij aan met name componisten, arrangeurs, liedschrijvers en uitvoerenden."
+    }
+  ],
+  "dateCreated": {
+    "@value": "2017-01-01",
+    "@type": "Date"
+  },
+  "dateModified": {
+    "@value": "2026-03-12",
+    "@type": "Date"
+  },
+  "datePublished": {
+    "@value": "2017-12-31",
+    "@type": "Date"
+  },
+  "inLanguage": [
+    "nl-NL",
+    "en-US"
+  ],
+  "version": "1.0",
+  "includedInDataCatalog": {
+    "@id": "https://data.podiumkunst.net/datacatalog/som"
+  },
+  "keywords": [
+    {
+      "@language": "nl",
+      "@value": "muziek"
+    },
+    {
+      "@language": "nl",
+      "@value": "arrangeurs"
+    },
+    {
+      "@language": "nl",
+      "@value": "musici"
+    },
+    {
+      "@language": "nl",
+      "@value": "componisten"
+    },
+    {
+      "@language": "nl",
+      "@value": "muzikanten"
+    },
+    {
+      "@language": "en",
+      "@value": "music"
+    },
+    {
+      "@language": "en",
+      "@value": "composers"
+    },
+    {
+      "@language": "en",
+      "@value": "arrangers"
+    },
+    {
+      "@language": "en",
+      "@value": "musicians"
+    }
+  ],
+  "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "spatialCoverage": {
+    "@id": "https://www.geonames.org/2750405"
+  },
+  "temporalCoverage": "1500/..",
+  "url": {
+    "@id": "https://data.muziekschatten.nl"
+  },
+  "creator": {
+    "@id": "https://www.omroepmuziek.nl"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.omroepmuziek.nl",
+    "name": [
+      {
+        "@language": "nl",
+        "@value": "Stichting Omroep Muziek"
+      },
+      {
+        "@language": "en",
+        "@value": "Stichting Omroep Muziek"
+      }
+    ],
+    "url": [
+      {
+        "@language": "nl",
+        "@value": "https://www.omroepmuziek.nl"
+      },
+      {
+        "@language": "en",
+        "@value": "https://www.omroepmuziek.nl"
+      }
+    ],
+    "sameAs": {
+      "@id": "http://www.wikidata.org/entity/Q113119338"
+    },
+    "identifier": "NL-HvsSOM",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "name": {
+        "@language": "nl",
+        "@value": "Eric van Balkum"
+      },
+      "email": "muziekschatten@omroepmuziek.nl"
+    }
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": [
+        {
+          "@language": "nl",
+          "@value": "SPARQL-endpoint"
+        },
+        {
+          "@language": "en",
+          "@value": "SPARQL-endpoint"
+        }
+      ],
+      "description": [
+        {
+          "@language": "nl",
+          "@value": "SPARQL endpoint"
+        },
+        {
+          "@language": "en",
+          "@value": "SPARQL endpoint"
+        }
+      ],
+      "contentUrl": {
+        "@id": "https://data.muziekschatten.nl/sparql"
+      },
+      "dateCreated": {
+        "@value": "2017-01-01",
+        "@type": "Date"
+      },
+      "dateModified": {
+        "@value": "2026-03-12",
+        "@type": "Date"
+      },
+      "datePublished": {
+        "@value": "2017-12-31",
+        "@type": "Date"
+      },
+      "inLanguage": [
+        "nl-NL",
+        "en-US"
+      ],
+      "usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.muziekschatten.nl/page/344/over"
+      }
+    }
+  ]
+}

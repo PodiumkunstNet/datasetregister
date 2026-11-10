@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://data.podiumkunst.net/dataset/som-dutch-classical-works",
+  "identifier": "https://data.podiumkunst.net/dataset/som-dutch-classical-works",
+  "name": [
+    {
+      "@language": "en",
+      "@value": "Dutch classical compositions"
+    },
+    {
+      "@language": "nl",
+      "@value": "Nederlandse klassieke-muziekwerken"
+    }
+  ],
+  "description": {
+    "@language": "nl",
+    "@value": "Deze dataset is het product van een pilot voor het creëren van Werk- en Expressie-entiteiten op het gebied van de Nederlandse klassieke muziek. Het is een eerste aanzet om te komen tot een terminologiebron voor Nederlandse composities – ook in het niet-klassieke genre - ten behoeve van de eenduidige identificatie en informatievoorziening. Vooralsnog bevat deze uitsluitend entiteiten gecreëerd uit de beschrijvingen van bladmuziekitems binnen de omroepbladmuziekcollectie van de Stichting Omroep Muziek. De uri’s zijn bedoeld om duurzaam te verwijzen naar deze entiteiten."
+  },
+  "dateCreated": {
+    "@value": "2024-01-01",
+    "@type": "Date"
+  },
+  "dateModified": {
+    "@value": "2026-03-12",
+    "@type": "Date"
+  },
+  "datePublished": {
+    "@value": "2024-12-31",
+    "@type": "Date"
+  },
+  "inLanguage": [
+    "nl-NL",
+    "en-US"
+  ],
+  "version": "1.0",
+  "includedInDataCatalog": {
+    "@id": "https://data.podiumkunst.net/datacatalog/pknet"
+  },
+  "keywords": [
+    {
+      "@language": "nl",
+      "@value": "composities"
+    },
+    {
+      "@language": "nl",
+      "@value": "muziekwerken"
+    },
+    {
+      "@language": "nl",
+      "@value": "componisten"
+    },
+    {
+      "@language": "en",
+      "@value": "music compositions"
+    }
+  ],
+  "about": {
+    "@id": "http://www.wikidata.org/entity/Q9730"
+  },
+  "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "spatialCoverage": {
+    "@id": "https://www.geonames.org/2750405"
+  },
+  "temporalCoverage": "1900/..",
+  "creator": {
+    "@id": "https://podiumkunst.net"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://podiumkunst.net",
+    "name": [
+      {
+        "@language": "nl",
+        "@value": "Podiumkunst.net"
+      },
+      {
+        "@language": "en",
+        "@value": "Podiumkunst.net"
+      }
+    ],
+    "identifier": "NL-podiumkunstnet",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "name": {
+        "@language": "nl",
+        "@value": "Petra Dreiskämper"
+      },
+      "email": "data@podiumkunst.net"
+    }
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": {
+        "@language": "nl",
+        "@value": "SPARQL-endpoint"
+      },
+      "description": {
+        "@language": "nl",
+        "@value": "SPARQL endpoint"
+      },
+      "contentUrl": {
+        "@id": "https://data.muziekschatten.nl/sparql"
+      },
+      "dateCreated": {
+        "@value": "2024-01-01",
+        "@type": "Date"
+      },
+      "dateModified": {
+        "@value": "2026-03-12",
+        "@type": "Date"
+      },
+      "datePublished": {
+        "@value": "2024-12-31",
+        "@type": "Date"
+      },
+      "inLanguage": [
+        "nl-NL",
+        "en-US"
+      ],
+      "usageInfo": {
+        "@id": "https://www.w3.org/TR/sparql11-protocol/"
+      },
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://www.podiumkunst.net/nieuws/muziekschatten-publiceert-ruim-20-000-klassieke-muziek-werken-van-nederlandse-bodem/"
+      }
+    }
+  ]
+}

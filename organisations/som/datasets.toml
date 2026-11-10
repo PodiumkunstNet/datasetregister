@@ -1,0 +1,77 @@
+# Dataset descriptions of Stichting Omroep Muziek.
+# Texts are written per language as name.nl = "..." and name.en = "...".
+# A text that is the same in both languages is written once as name = "...",
+# and gets both the nl and en language tag.
+# When date_modified is left out, the date of the run is used.
+# Distributions inherit license, in_language and the dates from their dataset.
+
+[organisation]
+id = "https://www.omroepmuziek.nl"
+identifier = "NL-HvsSOM"
+name = "Stichting Omroep Muziek"
+url = "https://www.omroepmuziek.nl"
+same_as = "http://www.wikidata.org/entity/Q113119338"
+
+[organisation.contact_point]
+name.nl = "Eric van Balkum"
+email = "muziekschatten@omroepmuziek.nl"
+
+# The data catalog with all datasets below, published by the organisation.
+[catalog]
+id = "https://data.podiumkunst.net/datacatalog/som"
+name.nl = "Open Data collectie van de Stichting Omroep Muziek"
+name.en = "Open Data collection of Stichting Omroep Muziek"
+description.nl = "Alle open datasets gemaakt of gepubliceerd door de Stichting Omroep Muziek."
+description.en = "All open datasets published by Stichting Omroep Muziek."
+
+# Values shared by all datasets of this organisation. A dataset can override them.
+[defaults]
+license = "https://creativecommons.org/licenses/by/4.0/"
+in_language = ["nl-NL", "en-US"]
+version = "1.0"
+spatial_coverage = "https://www.geonames.org/2750405"
+
+[[datasets]]
+slug = "som-dutch-sheet-music"
+id = "https://data.podiumkunst.net/dataset/som-dutch-sheet-music"
+name.en = "Sheet music treasures"
+name.nl = "Muziekschatten DataSpace"
+description.en = "Linked Open dataset on the sheet music contained in the collection of the Stichting Omroep Muziek and music-related persons and ensembles. This includes structured bibliographic descriptions of both published (ruleset: ISBD-PM) and unpublished, handwritten musical materials in various styles, genres and performance media. The unpublished category concerns music manuscripts that were written/arranged especially for the radio and television ensembles in the period from 1925 to the present day. Related names have been and will be standardised and published as such."
+description.nl = "Linked Open dataset over de bladmuziek van de Nederlandse publieke omroep en muziekgerelateerde personen en ensembles. Deze omvat gestructureerde bibliografische beschrijvingen van zowel uitgegeven (regelset: ISBD-PM) als ongepubliceerde, handgeschreven muziekmaterialen in diverse stijlen, genres en bezettingen. De ongepubliceerde categorie betreft muziekmanuscripten die speciaal voor de omroepensembles zijn geschreven/gearrangeerd en voor radio en televisie zijn uitgevoerd in de periode tussen 1925 tot nu. Hieraan gerelateerde namen zijn en worden zoveel mogelijk gestandaardiseerd en als zodanig gepubliceerd."
+date_created = "2017-01-01"
+date_published = "2017-12-31"
+date_modified = "2026-03-12"
+temporal_coverage = "1500/.."
+url = "https://data.muziekschatten.nl"
+keywords.nl = ["muziek", "linked data", "bladmuziek", "componisten", "composities", "arrangementen", "Nederland", "publieke omroep", "radio", "televisie", "omroepensembles"]
+keywords.en = ["sheet music", "composers"]
+
+[[datasets.distributions]]
+name = "SPARQL-endpoint"
+description.nl = "Deze data is gepubliceerd ten behoeve van de webcatalogus op muziekschatten.nl en maakt het mogelijk analoge en gedigitaliseerde muziekmaterialen te vinden en te gebruiken. Deze wordt wekelijks ververst en verrijkt."
+description.en = "SPARQL endpoint"
+content_url = "https://data.muziekschatten.nl/sparql"
+usage_info = "https://www.w3.org/TR/sparql11-protocol/"
+main_entity_of_page = "https://www.muziekschatten.nl/page/344/over"
+
+[[datasets]]
+slug = "som-persons-in-music"
+id = "https://data.podiumkunst.net/dataset/som-persons-in-music"
+name.en = "People in music"
+name.nl = "Muziekpersonen"
+description.en = "Linked Open Data Terminology resource for the unambiguous identification of persons in the music domain. Contains richly metadated personal entities that have a relationship with the sheet music collection of the Stichting Omroep Muziek. This includes composers, arrangers, lyricists, songwriters and performing artists."
+description.nl = "Linked Open Data Terminologiebron ten behoeve van eenduidige identificatie van en informatievoorziening over muziekpersonen. Bevat rijk gemetadateerde persoonsentiteiten die een relatie hebben met de bladmuziekcollectie van de Stichting Omroep Muziek. Denk hierbij aan met name componisten, arrangeurs, liedschrijvers en uitvoerenden."
+date_created = "2017-01-01"
+date_published = "2017-12-31"
+date_modified = "2026-03-12"
+temporal_coverage = "1500/.."
+url = "https://data.muziekschatten.nl"
+keywords.nl = ["muziek", "arrangeurs", "musici", "componisten", "muzikanten"]
+keywords.en = ["music", "composers", "arrangers", "musicians"]
+
+[[datasets.distributions]]
+name = "SPARQL-endpoint"
+description = "SPARQL endpoint"
+content_url = "https://data.muziekschatten.nl/sparql"
+usage_info = "https://www.w3.org/TR/sparql11-protocol/"
+main_entity_of_page = "https://www.muziekschatten.nl/page/344/over"

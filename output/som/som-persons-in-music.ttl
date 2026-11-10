@@ -1,0 +1,56 @@
+@prefix schema: <https://schema.org/> .
+
+<https://data.podiumkunst.net/dataset/som-persons-in-music> a schema:Dataset ;
+    schema:creator <https://www.omroepmuziek.nl> ;
+    schema:dateCreated "2017-01-01"^^schema:Date ;
+    schema:dateModified "2026-03-12"^^schema:Date ;
+    schema:datePublished "2017-12-31"^^schema:Date ;
+    schema:description "Linked Open Data Terminology resource for the unambiguous identification of persons in the music domain. Contains richly metadated personal entities that have a relationship with the sheet music collection of the Stichting Omroep Muziek. This includes composers, arrangers, lyricists, songwriters and performing artists."@en,
+        "Linked Open Data Terminologiebron ten behoeve van eenduidige identificatie van en informatievoorziening over muziekpersonen. Bevat rijk gemetadateerde persoonsentiteiten die een relatie hebben met de bladmuziekcollectie van de Stichting Omroep Muziek. Denk hierbij aan met name componisten, arrangeurs, liedschrijvers en uitvoerenden."@nl ;
+    schema:distribution [ a schema:DataDownload ;
+            schema:contentUrl <https://data.muziekschatten.nl/sparql> ;
+            schema:dateCreated "2017-01-01"^^schema:Date ;
+            schema:dateModified "2026-03-12"^^schema:Date ;
+            schema:datePublished "2017-12-31"^^schema:Date ;
+            schema:description "SPARQL endpoint"@en,
+                "SPARQL endpoint"@nl ;
+            schema:inLanguage "en-US",
+                "nl-NL" ;
+            schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+            schema:mainEntityOfPage <https://www.muziekschatten.nl/page/344/over> ;
+            schema:name "SPARQL-endpoint"@en,
+                "SPARQL-endpoint"@nl ;
+            schema:usageInfo <https://www.w3.org/TR/sparql11-protocol/> ] ;
+    schema:identifier "https://data.podiumkunst.net/dataset/som-persons-in-music" ;
+    schema:inLanguage "en-US",
+        "nl-NL" ;
+    schema:includedInDataCatalog <https://data.podiumkunst.net/datacatalog/som> ;
+    schema:keywords "arrangers"@en,
+        "composers"@en,
+        "music"@en,
+        "musicians"@en,
+        "arrangeurs"@nl,
+        "componisten"@nl,
+        "musici"@nl,
+        "muziek"@nl,
+        "muzikanten"@nl ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "People in music"@en,
+        "Muziekpersonen"@nl ;
+    schema:publisher <https://www.omroepmuziek.nl> ;
+    schema:spatialCoverage <https://www.geonames.org/2750405> ;
+    schema:temporalCoverage "1500/.." ;
+    schema:url <https://data.muziekschatten.nl> ;
+    schema:version "1.0" .
+
+<https://www.omroepmuziek.nl> a schema:Organization ;
+    schema:contactPoint [ a schema:ContactPoint ;
+            schema:email "muziekschatten@omroepmuziek.nl" ;
+            schema:name "Eric van Balkum"@nl ] ;
+    schema:identifier "NL-HvsSOM" ;
+    schema:name "Stichting Omroep Muziek"@en,
+        "Stichting Omroep Muziek"@nl ;
+    schema:sameAs <http://www.wikidata.org/entity/Q113119338> ;
+    schema:url "https://www.omroepmuziek.nl"@en,
+        "https://www.omroepmuziek.nl"@nl .
+

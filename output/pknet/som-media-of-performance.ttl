@@ -1,0 +1,50 @@
+@prefix schema: <https://schema.org/> .
+
+<https://data.podiumkunst.net/dataset/som-media-of-performance> a schema:Dataset ;
+    schema:about <http://www.wikidata.org/entity/Q617028> ;
+    schema:creator <https://podiumkunst.net> ;
+    schema:dateCreated "2022-01-01"^^schema:Date ;
+    schema:dateModified "2026-03-12"^^schema:Date ;
+    schema:datePublished "2022-12-31"^^schema:Date ;
+    schema:description "Linked Open Data hierarchically structured, multilingual terminology resource for the unambiguous identification of mediums of performance prescribed and/or used in the performing arts. This includes voices, instruments and compositions of instrumental and vocal ensembles. This source provides a solid basis for searching for repertoire based on the instrumentation (both vocal and instrumental) of a piece of music."@en,
+        "Linked Open Data hiërarchisch gestructureerde, meertalige terminologiebron voor de eenduidige identificatie van middelen die worden voorgeschreven en/of gebruikt bij uitvoeringen in de podiumkunsten. Denk hierbij aan (zang)stemmen, instrumenten en instrumentale en vocale ensemblesamenstellingen. Deze bron biedt een degelijke basis voor het zoeken van repertoire op basis van de bezetting van een muziekstuk."@nl ;
+    schema:distribution [ a schema:DataDownload ;
+            schema:contentUrl <https://data.muziekschatten.nl/sparql> ;
+            schema:dateCreated "2022-01-01"^^schema:Date ;
+            schema:dateModified "2026-03-12"^^schema:Date ;
+            schema:datePublished "2022-12-31"^^schema:Date ;
+            schema:description "SPARQL endpoint"@nl ;
+            schema:inLanguage "en-US",
+                "nl-NL" ;
+            schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+            schema:name "SPARQL-endpoint"@nl ;
+            schema:usageInfo <https://www.w3.org/TR/sparql11-protocol/> ] ;
+    schema:identifier "https://data.podiumkunst.net/dataset/som-media-of-performance" ;
+    schema:inLanguage "en-US",
+        "nl-NL" ;
+    schema:includedInDataCatalog <https://data.podiumkunst.net/datacatalog/pknet> ;
+    schema:keywords "instruments"@en,
+        "media of performance"@en,
+        "voices"@en,
+        "componisten"@nl,
+        "ensemblesamenstellingen"@nl,
+        "instrumenten"@nl,
+        "muziekwerken"@nl,
+        "uitvoeringsmedia"@nl,
+        "zangstemmen"@nl ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "Medium of performance"@en,
+        "Uitvoeringsmedia"@nl ;
+    schema:publisher <https://podiumkunst.net> ;
+    schema:spatialCoverage <https://www.geonames.org/2750405> ;
+    schema:temporalCoverage "1900/.." ;
+    schema:version "1.0" .
+
+<https://podiumkunst.net> a schema:Organization ;
+    schema:contactPoint [ a schema:ContactPoint ;
+            schema:email "data@podiumkunst.net" ;
+            schema:name "Petra Dreiskämper"@nl ] ;
+    schema:identifier "NL-podiumkunstnet" ;
+    schema:name "Podiumkunst.net"@en,
+        "Podiumkunst.net"@nl .
+

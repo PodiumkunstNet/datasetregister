@@ -1,0 +1,71 @@
+# Dataset descriptions of Podiumkunst.net.
+# Texts are written per language as name.nl = "..." and name.en = "...".
+# A text that is the same in both languages is written once as name = "...",
+# and gets both the nl and en language tag.
+# When date_modified is left out, the date of the run is used.
+# Distributions inherit license, in_language and the dates from their dataset.
+
+[organisation]
+id = "https://podiumkunst.net"
+identifier = "NL-podiumkunstnet"
+name = "Podiumkunst.net"
+
+[organisation.contact_point]
+name.nl = "Petra Dreiskämper"
+email = "data@podiumkunst.net"
+
+# The data catalog with all datasets below, published by the organisation.
+[catalog]
+id = "https://data.podiumkunst.net/datacatalog/pknet"
+name.nl = "Open Data collectie van Podiumkunst.net"
+name.en = "Open Data collection of Podiumkunst.net"
+description.nl = "Alle open datasets over de podiumkunsten, gemaakt of gepubliceerd door podiumkunst.net."
+description.en = "All open datasets on the performing arts in the Netherlands, published by Podiumkunst.net."
+
+# Values shared by all datasets of this organisation. A dataset can override them.
+[defaults]
+license = "https://creativecommons.org/licenses/by/4.0/"
+in_language = ["nl-NL", "en-US"]
+version = "1.0"
+spatial_coverage = "https://www.geonames.org/2750405"
+temporal_coverage = "1900/.."
+
+[[datasets]]
+slug = "som-dutch-classical-works"
+id = "https://data.podiumkunst.net/dataset/som-dutch-classical-works"
+name.en = "Dutch classical compositions"
+name.nl = "Nederlandse klassieke-muziekwerken"
+description.nl = "Deze dataset is het product van een pilot voor het creëren van Werk- en Expressie-entiteiten op het gebied van de Nederlandse klassieke muziek. Het is een eerste aanzet om te komen tot een terminologiebron voor Nederlandse composities – ook in het niet-klassieke genre - ten behoeve van de eenduidige identificatie en informatievoorziening. Vooralsnog bevat deze uitsluitend entiteiten gecreëerd uit de beschrijvingen van bladmuziekitems binnen de omroepbladmuziekcollectie van de Stichting Omroep Muziek. De uri’s zijn bedoeld om duurzaam te verwijzen naar deze entiteiten."
+about = "http://www.wikidata.org/entity/Q9730"
+date_created = "2024-01-01"
+date_published = "2024-12-31"
+date_modified = "2026-03-12"
+keywords.nl = ["composities", "muziekwerken", "componisten"]
+keywords.en = ["music compositions"]
+
+[[datasets.distributions]]
+name.nl = "SPARQL-endpoint"
+description.nl = "SPARQL endpoint"
+content_url = "https://data.muziekschatten.nl/sparql"
+usage_info = "https://www.w3.org/TR/sparql11-protocol/"
+main_entity_of_page = "https://www.podiumkunst.net/nieuws/muziekschatten-publiceert-ruim-20-000-klassieke-muziek-werken-van-nederlandse-bodem/"
+
+[[datasets]]
+slug = "som-media-of-performance"
+id = "https://data.podiumkunst.net/dataset/som-media-of-performance"
+name.en = "Medium of performance"
+name.nl = "Uitvoeringsmedia"
+description.en = "Linked Open Data hierarchically structured, multilingual terminology resource for the unambiguous identification of mediums of performance prescribed and/or used in the performing arts. This includes voices, instruments and compositions of instrumental and vocal ensembles. This source provides a solid basis for searching for repertoire based on the instrumentation (both vocal and instrumental) of a piece of music."
+description.nl = "Linked Open Data hiërarchisch gestructureerde, meertalige terminologiebron voor de eenduidige identificatie van middelen die worden voorgeschreven en/of gebruikt bij uitvoeringen in de podiumkunsten. Denk hierbij aan (zang)stemmen, instrumenten en instrumentale en vocale ensemblesamenstellingen. Deze bron biedt een degelijke basis voor het zoeken van repertoire op basis van de bezetting van een muziekstuk."
+about = "http://www.wikidata.org/entity/Q617028"
+date_created = "2022-01-01"
+date_published = "2022-12-31"
+date_modified = "2026-03-12"
+keywords.nl = ["uitvoeringsmedia", "muziekwerken", "componisten", "ensemblesamenstellingen", "instrumenten", "zangstemmen"]
+keywords.en = ["media of performance", "voices", "instruments"]
+
+[[datasets.distributions]]
+name.nl = "SPARQL-endpoint"
+description.nl = "SPARQL endpoint"
+content_url = "https://data.muziekschatten.nl/sparql"
+usage_info = "https://www.w3.org/TR/sparql11-protocol/"

@@ -1,0 +1,8 @@
+[project]
+name = "datasetregister"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pyshacl>=0.30",
+    "rdflib>=7.1",
+]

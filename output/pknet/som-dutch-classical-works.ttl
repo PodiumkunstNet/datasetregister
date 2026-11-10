@@ -1,0 +1,45 @@
+@prefix schema: <https://schema.org/> .
+
+<https://data.podiumkunst.net/dataset/som-dutch-classical-works> a schema:Dataset ;
+    schema:about <http://www.wikidata.org/entity/Q9730> ;
+    schema:creator <https://podiumkunst.net> ;
+    schema:dateCreated "2024-01-01"^^schema:Date ;
+    schema:dateModified "2026-03-12"^^schema:Date ;
+    schema:datePublished "2024-12-31"^^schema:Date ;
+    schema:description "Deze dataset is het product van een pilot voor het creëren van Werk- en Expressie-entiteiten op het gebied van de Nederlandse klassieke muziek. Het is een eerste aanzet om te komen tot een terminologiebron voor Nederlandse composities – ook in het niet-klassieke genre - ten behoeve van de eenduidige identificatie en informatievoorziening. Vooralsnog bevat deze uitsluitend entiteiten gecreëerd uit de beschrijvingen van bladmuziekitems binnen de omroepbladmuziekcollectie van de Stichting Omroep Muziek. De uri’s zijn bedoeld om duurzaam te verwijzen naar deze entiteiten."@nl ;
+    schema:distribution [ a schema:DataDownload ;
+            schema:contentUrl <https://data.muziekschatten.nl/sparql> ;
+            schema:dateCreated "2024-01-01"^^schema:Date ;
+            schema:dateModified "2026-03-12"^^schema:Date ;
+            schema:datePublished "2024-12-31"^^schema:Date ;
+            schema:description "SPARQL endpoint"@nl ;
+            schema:inLanguage "en-US",
+                "nl-NL" ;
+            schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+            schema:mainEntityOfPage <https://www.podiumkunst.net/nieuws/muziekschatten-publiceert-ruim-20-000-klassieke-muziek-werken-van-nederlandse-bodem/> ;
+            schema:name "SPARQL-endpoint"@nl ;
+            schema:usageInfo <https://www.w3.org/TR/sparql11-protocol/> ] ;
+    schema:identifier "https://data.podiumkunst.net/dataset/som-dutch-classical-works" ;
+    schema:inLanguage "en-US",
+        "nl-NL" ;
+    schema:includedInDataCatalog <https://data.podiumkunst.net/datacatalog/pknet> ;
+    schema:keywords "music compositions"@en,
+        "componisten"@nl,
+        "composities"@nl,
+        "muziekwerken"@nl ;
+    schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:name "Dutch classical compositions"@en,
+        "Nederlandse klassieke-muziekwerken"@nl ;
+    schema:publisher <https://podiumkunst.net> ;
+    schema:spatialCoverage <https://www.geonames.org/2750405> ;
+    schema:temporalCoverage "1900/.." ;
+    schema:version "1.0" .
+
+<https://podiumkunst.net> a schema:Organization ;
+    schema:contactPoint [ a schema:ContactPoint ;
+            schema:email "data@podiumkunst.net" ;
+            schema:name "Petra Dreiskämper"@nl ] ;
+    schema:identifier "NL-podiumkunstnet" ;
+    schema:name "Podiumkunst.net"@en,
+        "Podiumkunst.net"@nl .
+

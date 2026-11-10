@@ -1,0 +1,15 @@
+# IDE stuff
+.idea
+.DS_Store
+.vscode/*
+.editorconfig
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment
+.venv/
+
+uv.lock
